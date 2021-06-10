@@ -23,34 +23,57 @@ const Layout = ({ preview, children }: Props) => {
               <div className="p-5 bg-white sticky top-0">
                 <img
                   className="border border-indigo-100 shadow-lg round"
-                  src="http://lilithaengineering.co.za/wp-content/uploads/2017/08/person-placeholder.jpg"
+                  src="/niraj.jpeg"
                 />
                 <div className="pt-2 border-t mt-5 w-full text-center text-xl text-gray-600">
                   Niraj Kashyap
                 </div>
+                <div className="pt-2 border-t mt-5 w-full text-center text-xl text-gray-600">
+                  JavaScript Developer  
+                </div>
               </div>
               <div className="w-full h-screen antialiased flex flex-col hover:cursor-pointer">
                 <a
+                  target="_blank"
                   className="hover:bg-gray-300 bg-gray-200 border-t-2 p-3 w-full text-xl text-left text-gray-600 font-semibold"
-                  href=""
+                  href="https://www.linkedin.com/in/kashyapniraj/"
                 >
-                  <i className="fa fa-comment text-gray-600 text-2xl pr-1 pt-1 float-right"></i>
-                  Messages
+                  {/* <i className="fa fa-comment text-gray-600 text-2xl pr-1 pt-1 float-right"></i> */}
+                  Linkedin
                 </a>
                 <a
+                  target="_blank"
                   className="hover:bg-gray-300 bg-gray-200 border-t-2 p-3 w-full text-xl text-left text-gray-600 font-semibold"
-                  href=""
+                  href="https://github.com/nirajkashyap"
                 >
-                  <i className="fa fa-cog text-gray-600 text-2xl pr-1 pt-1 float-right"></i>
-                  Settings
+                  {/* <i className="fa fa-cog text-gray-600 text-2xl pr-1 pt-1 float-right"></i> */}
+                  GitHub
                 </a>
                 <a
+                  target="_blank"
                   className="hover:bg-gray-300 bg-gray-200 border-t-2 p-3 w-full text-xl text-left text-gray-600 font-semibold"
-                  href=""
+                  href="https://stackoverflow.com/users/2498621/niraj-kashyap"
                 >
-                  <i className="fa fa-arrow-left text-gray-600 text-2xl pr-1 pt-1 float-right"></i>
-                  Log out
+                  {/* <i className="fa fa-arrow-left text-gray-600 text-2xl pr-1 pt-1 float-right"></i> */}
+                  Stack overflow 
                 </a>
+                <a
+                  target="_blank"
+                  className="hover:bg-gray-300 bg-gray-200 border-t-2 p-3 w-full text-xl text-left text-gray-600 font-semibold"
+                  href="https://www.hackerrank.com/niraj38re"
+                >
+                  
+                  HackerRank
+                </a>
+                <a
+                  target="_blank"
+                  className="hover:bg-gray-300 bg-gray-200 border-t-2 p-3 w-full text-xl text-left text-gray-600 font-semibold"
+                  href="https://www.hackerearth.com/@niraj.38.re"
+                >
+                  
+                  HackerEarth
+                </a>
+                
               </div>
             </div>
 
@@ -58,110 +81,7 @@ const Layout = ({ preview, children }: Props) => {
               
               <main>{children}</main>
               
-              <div className="bg-white w-full shadow rounded-lg p-5">
-                <textarea
-                  className="bg-gray-200 w-full rounded-lg shadow border p-2"
-                  rows="5"
-                  placeholder="Speak your mind"
-                ></textarea>
-
-                <div className="w-full flex flex-row flex-wrap mt-3">
-                  <div className="w-1/3">
-                    <select className="w-full p-2 rounded-lg bg-gray-200 shadow border float-left">
-                      <option>Public</option>
-                      <option>Private</option>
-                    </select>
-                  </div>
-                  <div className="w-2/3">
-                    <button
-                      type="button"
-                      className="float-right bg-indigo-400 hover:bg-indigo-300 text-white p-2 rounded-lg"
-                    >
-                      Submit
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-3 flex flex-col">
-                <div className="bg-white mt-3">
-                  <img
-                    className="border rounded-t-lg shadow-lg "
-                    src="https://images.unsplash.com/photo-1572817519612-d8fadd929b00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-                  />
-                  <div className="bg-white border shadow p-5 text-xl text-gray-700 font-semibold">
-                    A Pretty Cool photo from the mountains. Image credit to
-                    @danielmirlea on Unsplash.
-                  </div>
-                  <div className="bg-white p-1 border shadow flex flex-row flex-wrap">
-                    <div className="w-1/3 hover:bg-gray-200 text-center text-xl text-gray-700 font-semibold">
-                      Like
-                    </div>
-                    <div className="w-1/3 hover:bg-gray-200 border-l-4 border-r- text-center text-xl text-gray-700 font-semibold">
-                      Share
-                    </div>
-                    <div className="w-1/3 hover:bg-gray-200 border-l-4 text-center text-xl text-gray-700 font-semibold">
-                      Comment
-                    </div>
-                  </div>
-
-                  <div className="bg-white border-4 bg-gray-300 border-white rounded-b-lg shadow p-5 text-xl text-gray-700 content-center font-semibold flex flex-row flex-wrap">
-                    <div className="w-full">
-                      <div className="w-full text-left text-xl text-gray-600">
-                        Some Person
-                      </div>
-                      A Pretty Cool photo from the mountains. Image credit to
-                      danielmirlea on Unsplash. A Pretty Cool photo from the
-                      mountains. Image credit to danielmirlea on Unsplash.
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white mt-3">
-                  <img
-                    className="border rounded-t-lg shadow-lg "
-                    src="https://images.unsplash.com/photo-1572817519612-d8fadd929b00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-                  />
-                  <div className="bg-white border shadow p-5 text-xl text-gray-700 font-semibold">
-                    A Pretty Cool photo from the mountains. Image credit to
-                    @danielmirlea on Unsplash.
-                  </div>
-                  <div className="bg-white p-1 rounded-b-lg border shadow flex flex-row flex-wrap">
-                    <div className="w-1/3 hover:bg-gray-200 text-center text-xl text-gray-700 font-semibold">
-                      Like
-                    </div>
-                    <div className="w-1/3 hover:bg-gray-200 border-l-4 border-r- text-center text-xl text-gray-700 font-semibold">
-                      Share
-                    </div>
-                    <div className="w-1/3 hover:bg-gray-200 border-l-4 text-center text-xl text-gray-700 font-semibold">
-                      Comment
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white mt-3">
-                  <img
-                    className="border rounded-t-lg shadow-lg "
-                    src="https://images.unsplash.com/photo-1572817519612-d8fadd929b00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-                  />
-                  <div className="bg-white border shadow p-5 text-xl text-gray-700 font-semibold">
-                    A Pretty Cool photo from the mountains. Image credit to
-                    @danielmirlea on Unsplash.
-                  </div>
-                  <div className="bg-white p-1 rounded-b-lg border shadow flex flex-row flex-wrap">
-                    <div className="w-1/3 hover:bg-gray-200 text-center text-xl text-gray-700 font-semibold">
-                      Like
-                    </div>
-                    <div className="w-1/3 hover:bg-gray-200 border-l-4 border-r- text-center text-xl text-gray-700 font-semibold">
-                      Share
-                    </div>
-                    <div className="w-1/3 hover:bg-gray-200 border-l-4 text-center text-xl text-gray-700 font-semibold">
-                      Comment
-                    </div>
-                  </div>
-                </div>
-              </div>
-            
+           
             
             </div>
           </div>

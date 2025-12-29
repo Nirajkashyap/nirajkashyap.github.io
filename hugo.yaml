@@ -16,7 +16,7 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Niraj Kashyap
   description: "Niraj Kashyap's personal blog and portfolio"
-  keywords: [Blog, Portfolio, PaperMod]
+  keywords: [Blog, Portfolio, Tech, Software, Programming]
   author: Me
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -43,15 +43,14 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
-
+    favicon: "favicon_io/favicon.ico"
+    favicon16x16: "favicon_io/favicon-16x16.png"
+    favicon32x32: "favicon_io/favicon-32x32.png"
+    apple_touch_icon: "favicon_io/apple-touch-icon.png"
+    safari_pinned_tab: "favicon_io/safari-pinned-tab.svg"
   label:
     text: "Niraj Kashyap"
-    icon: /apple-touch-icon.png
+    icon: "favicon_io/apple-touch-icon.png"
     iconHeight: 35
 
   # profile-mode
@@ -59,7 +58,7 @@ params:
     enabled: false # needs to be explicitly set
     title: Niraj Kashyap
     subtitle: "This is blog and portfolio of Niraj Kashyap"
-    imageUrl: "<img location>"
+    imageUrl: "favicon_io/favicon-16x16.png"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
@@ -102,7 +101,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/Nirajkashyap/nirajkashyap.github.io/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 

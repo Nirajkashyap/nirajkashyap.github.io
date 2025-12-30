@@ -11,6 +11,12 @@ buildExpired: false
 minify:
   disableXML: true
   minifyOutput: true
+  # disableCSS: false
+  # # tdewolff:
+  # #   css:
+  # #     # inline: true
+  # #     precision: 1
+  # #     # version: 0
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.

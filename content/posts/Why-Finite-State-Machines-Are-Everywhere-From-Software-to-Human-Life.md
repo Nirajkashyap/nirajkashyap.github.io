@@ -8,10 +8,10 @@ author: ["Niraj Kashyap"]
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
-draft: true
+draft: false
 hidemeta: false
 comments: true
-description: "Desc Text."
+description: "Explore why Finite State Machines are everywhere — from software systems to human behavior — and how states and transitions shape both code and daily life."
 canonicalURL: "https://nirajkashyap.github.io/posts/Why-Finite-State-Machines-Are-Everywhere-From-Software-to-Human-Life"
 disableHLJS: true # to disable highlightjs
 disableShare: false

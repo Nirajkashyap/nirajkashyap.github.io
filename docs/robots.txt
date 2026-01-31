@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://nirajkashyap.github.io/sitemap.xml

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Niraj Kashyap</title>
+    <link>https://nirajkashyap.github.io/</link>
+    <description>Recent content on Niraj Kashyap</description>
+    <image>
+      <title>Niraj Kashyap</title>
+      <url>https://nirajkashyap.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://nirajkashyap.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 13 Jan 2026 21:03:08 +0530</lastBuildDate>
+    <atom:link href="https://nirajkashyap.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Finite State Machines Are Everywhere: From Software to Human Life</title>
+      <link>https://nirajkashyap.github.io/posts/why-finite-state-machines-are-everywhere-from-software-to-human-life/</link>
+      <pubDate>Tue, 13 Jan 2026 21:03:08 +0530</pubDate>
+      <guid>https://nirajkashyap.github.io/posts/why-finite-state-machines-are-everywhere-from-software-to-human-life/</guid>
+      <description>Explore why Finite State Machines are everywhere — from software systems to human behavior — and how states and transitions shape both code and daily life.</description>
+    </item>
+    <item>
+      <title>Finite State Machines Backed by PostgreSQL Intro</title>
+      <link>https://nirajkashyap.github.io/posts/finite-state-machines-backed-by-postgresql-intro/</link>
+      <pubDate>Tue, 30 Dec 2025 10:37:22 +0530</pubDate>
+      <guid>https://nirajkashyap.github.io/posts/finite-state-machines-backed-by-postgresql-intro/</guid>
+      <description>Learn how to design and implement Finite State Machines (FSM) using PostgreSQL. This blog series covers schema design, state transitions, workflow automation, and best practices for building robust, stateful applications with PostgreSQL as the engine.</description>
+    </item>
+  </channel>
+</rss>

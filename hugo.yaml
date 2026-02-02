@@ -19,9 +19,15 @@ minify:
   # #     precision: 1
   # #     # version: 0
 
+# services:
+#   googleAnalytics:
+#     id: G-H1HMJ6NEW1 # Disable this as we are using GTM
+ 
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Niraj Kashyap
+  gtmID: "GTM-KPZ24GDR" # Google Tag Manager ID, to enable GTM
   description: "Niraj Kashyap's personal blog and portfolio"
   keywords: [Blog, Portfolio, Tech, Software, Programming]
   author: Me
@@ -94,9 +100,9 @@ params:
     - name: hackerearth
       url: "https://www.hackerearth.com/@niraj.38.re"  
 
-  # analytics:
-  #   google:
-  #     SiteVerificationTag: "XYZabc"
+  analytics:
+    google:
+      SiteVerificationTag: "eKy67xvjTMrmuEu-KizFoWNyijXJvY8rNRcYsxZaMtA" # Google site verification tag for Search Console 
   #   bing:
   #     SiteVerificationTag: "XYZabc"
   #   yandex:

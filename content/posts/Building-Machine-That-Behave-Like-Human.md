@@ -38,8 +38,8 @@ editPost:
 ---
 
 
+### The Think–Act Model of Human Behavior
 
-### Human Action for Any Task
 
 Human action for any task can be divided into two main parts:
 
@@ -53,9 +53,11 @@ Acting is about executing decisions in the real world. Human actions are shaped 
 
 By studying how humans approach tasks—separating thinking from acting, and combining both with adaptability—we can create machines that are not only efficient but also resilient and capable of handling real-world complexity.
 
+![Alt text](/image.png)
+
 ---
 
-### Durable Execution:Emulating Human Task
+### Durable Execution: Emulating Human Task
 
 This blog post explores how the core principles behind human traits such as adaptability, memory, goal-orientation, and resilience can be translated into the design of machines and software systems. We will look at:
 
@@ -66,21 +68,26 @@ This blog post explores how the core principles behind human traits such as adap
 By drawing inspiration from human intelligence and action, we aim to build systems that are robust, flexible, and capable of handling real-world challenges.
 
 
-Durable execution is not just a technical term—it is deeply rooted in how humans naturally operate. In everyday life, when we encounter interruptions, distractions, or failures, we rarely start over from scratch. Instead, we remember our progress, recall our goals, and resume from where we left off. This ability to persist state and recover is fundamental to human effectiveness.
+Durable execution is not just a technical term—it is deeply rooted in how humans naturally operate. In everyday life, when we encounter interruptions, distraction or failures, we rarely start over from scratch. Instead, we remember our progress, recall our goals, and resume from where we left off. This ability to persist state and recover is fundamental to human effectiveness.
 
 Similarly, durable workflow systems in software are designed to mimic this human trait. By persisting the state of a process and enabling it to resume after a disruption, these systems bring human-like resilience and continuity to automation. Modeling workflows as finite state machines (FSMs) and storing their state externally (such as in a database) allows software to handle interruptions gracefully—just as humans do.
 
 In this blog, we will see how these ideas can be applied to build machines and workflows that are not only technically robust but also inspired by the way humans act and adapt in the real world.
 
-## Durable Workflow Building From FSM
 
-### 1. What is Durable Execution / Durable Workflow?
+![Alt text](/image-1.png)
+
+---
+
+### Durable Execution: FSM-based Orchestration  Platform
+
+#### 1. What is Durable Execution / Durable Workflow?
 
 Durable execution (or durable workflow) refers to the ability of a system to reliably track, persist, and resume the progress of long-running workflows or processes, even in the face of failures, restarts, or interruptions. This means that the state of the workflow is saved externally (often in a database), so that if the application crashes or needs to be restarted, the workflow can continue from where it left off without loss of information or progress.
 
 Durable workflows are essential for business processes that span hours, days, or even weeks, and require reliability, consistency, and recoverability.
 
-### 2. How Durable Execution is Related to FSM
+#### 2. How Durable Execution is Related to FSM
 
 Finite State Machines (FSMs) provide a natural model for representing the state and transitions of a workflow. By persisting the current state and transition history of an FSM, you can achieve durable execution:
 
@@ -89,3 +96,12 @@ Finite State Machines (FSMs) provide a natural model for representing the state 
 - By storing the FSM state in a durable store (like PostgreSQL), you ensure that the workflow can be resumed after failures.
 
 This approach allows you to build robust, fault-tolerant workflow engines where business logic is modeled as state transitions, and the system can always recover and continue processing from the last known state.
+
+![Alt text](/image-2.png)
+
+---
+
+In the upcoming blog series, we will discover how to build [Durable Execution/Workflow based on Finite State Machines (FSM) with PostgreSQL]({{< ref "posts/Durable-Execution-based-on-Finite-State-Machines-with-PostgreSQL.md" >}}).  By the end of the series, you'll see how PostgreSQL can serve as more than just a data store—it can be the engine that drives your application's stateful logic.
+
+
+

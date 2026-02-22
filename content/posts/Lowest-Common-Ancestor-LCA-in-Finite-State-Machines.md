@@ -3,7 +3,18 @@ title: 'Lowest Common Ancestor LCA in Finite State Machines'
 date: '2026-01-31T21:18:13+05:30'
 # weight: 1
 # aliases: ["/first"]
-tags: ["first"]
+tags: [
+    "lowest common ancestor",
+    "LCA",
+    "finite state machine",
+    "FSM",
+    "state machines",
+    "hierarchical states",
+    "workflow automation",
+    "process modeling",
+    "tree algorithms",
+    "software design"
+]
 author: ["Niraj Kashyap"]
 # author: ["Me", "You"] # multiple authors
 showToc: true
@@ -12,7 +23,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: true
-description: "Desc Text."
+description: "Explore the concept of Lowest Common Ancestor (LCA) in trees and state machines, and see how it optimizes transitions in both software and real-world routines. Real-life examples illustrate how LCA streamlines hierarchical processes and state changes."
 canonicalURL: "https://nirajkashyap.github.io/posts/"
 disableHLJS: true # to disable highlightjs
 disableShare: false

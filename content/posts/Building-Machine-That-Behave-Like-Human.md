@@ -3,16 +3,25 @@ title: 'Building Machine That Behave Like Human'
 date: '2026-02-06T14:43:46+05:30'
 # weight: 1
 # aliases: ["/first"]
-tags: ["first"]
+tags: [
+    "human-like AI",
+    "durable execution",
+    "workflow automation",
+    "resilience",
+    "finite state machine",
+    "AI systems",
+    "adaptability",
+    "task management"
+    ]
 author: ["Niraj Kashyap"]
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
 <!--draft: false  this was default seetings in papermod theme -->
-draft: true
+draft: false
 hidemeta: false
 comments: true
-description: "Desc Text."
+description: "This section explores how machines can emulate human behavior by separating thinking and acting, and by incorporating adaptability and resilience. It discusses how durable execution in software draws inspiration from human traits, enabling systems to persist, recover, and handle real-world complexity through concepts like finite state machines."
 canonicalURL: "https://nirajkashyap.github.io/posts/"
 disableHLJS: true # to disable highlightjs
 disableShare: false
@@ -79,29 +88,14 @@ In this blog, we will see how these ideas can be applied to build machines and w
 
 ---
 
-### Durable Execution: FSM-based Orchestration  Platform
-
-#### 1. What is Durable Execution / Durable Workflow?
+### What is Durable Execution / Durable Workflow?
 
 Durable execution (or durable workflow) refers to the ability of a system to reliably track, persist, and resume the progress of long-running workflows or processes, even in the face of failures, restarts, or interruptions. This means that the state of the workflow is saved externally (often in a database), so that if the application crashes or needs to be restarted, the workflow can continue from where it left off without loss of information or progress.
 
 Durable workflows are essential for business processes that span hours, days, or even weeks, and require reliability, consistency, and recoverability.
 
-#### 2. How Durable Execution is Related to FSM
 
-Finite State Machines (FSMs) provide a natural model for representing the state and transitions of a workflow. By persisting the current state and transition history of an FSM, you can achieve durable execution:
-
-- Each step or stage in a workflow is a state in the FSM.
-- Transitions represent progress or events in the workflow.
-- By storing the FSM state in a durable store (like PostgreSQL), you ensure that the workflow can be resumed after failures.
-
-This approach allows you to build robust, fault-tolerant workflow engines where business logic is modeled as state transitions, and the system can always recover and continue processing from the last known state.
-
-![Alt text](/image-2.png)
-
----
-
-In the upcoming blog series, we will discover how to build [Durable Execution/Workflow based on Finite State Machines (FSM) with PostgreSQL]({{< ref "posts/Durable-Execution-based-on-Finite-State-Machines-with-PostgreSQL.md" >}}).  By the end of the series, you'll see how PostgreSQL can serve as more than just a data store—it can be the engine that drives your application's stateful logic.
+In the upcoming blog, we will discover [Durable Execution:FSM based Orchestration Platform]({{< ref "posts/Durable-Execution-FSM-based-Orchestration-Platform.md" >}}).
 
 
 

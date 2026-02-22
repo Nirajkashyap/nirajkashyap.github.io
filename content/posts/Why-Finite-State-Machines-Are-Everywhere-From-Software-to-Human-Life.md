@@ -3,7 +3,17 @@ title: 'Why Finite State Machines Are Everywhere: From Software to Human Life'
 date: '2026-01-13T21:03:08+05:30'
 # weight: 1
 # aliases: ["/first"]
-tags: ["finite state machine", "FSM", "PostgreSQL", "database design", "workflow automation"]
+tags: [
+    "finite state machine",
+    "FSM",
+    "workflow automation",
+    "software design",
+    "state management",
+    "human behavior",
+    "process modeling",
+    "system reliability",
+    "real-world examples"
+]
 author: ["Niraj Kashyap"]
 # author: ["Me", "You"] # multiple authors
 showToc: true

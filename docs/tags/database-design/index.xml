@@ -11,21 +11,14 @@
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Jan 2026 21:03:08 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 30 Dec 2025 10:37:22 +0530</lastBuildDate>
     <atom:link href="https://nirajkashyap.github.io/tags/database-design/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Why Finite State Machines Are Everywhere: From Software to Human Life</title>
-      <link>https://nirajkashyap.github.io/posts/why-finite-state-machines-are-everywhere-from-software-to-human-life/</link>
-      <pubDate>Tue, 13 Jan 2026 21:03:08 +0530</pubDate>
-      <guid>https://nirajkashyap.github.io/posts/why-finite-state-machines-are-everywhere-from-software-to-human-life/</guid>
-      <description>Explore why Finite State Machines are everywhere — from software systems to human behavior — and how states and transitions shape both code and daily life.</description>
-    </item>
     <item>
       <title>Finite State Machines Backed by PostgreSQL Intro</title>
       <link>https://nirajkashyap.github.io/posts/finite-state-machines-backed-by-postgresql-intro/</link>
       <pubDate>Tue, 30 Dec 2025 10:37:22 +0530</pubDate>
       <guid>https://nirajkashyap.github.io/posts/finite-state-machines-backed-by-postgresql-intro/</guid>
-      <description>Learn how to design and implement Finite State Machines (FSM) using PostgreSQL. This blog series covers schema design, state transitions, workflow automation, and best practices for building robust, stateful applications with PostgreSQL as the engine.</description>
+      <description>This section introduces how finite state machines (FSMs) can be implemented in various languages and directly in PostgreSQL, leveraging the database for state management, integrity, and workflow automation. It highlights the benefits of using PostgreSQL for FSMs, including durability, auditability, and centralized control of business processes.</description>
     </item>
   </channel>
 </rss>

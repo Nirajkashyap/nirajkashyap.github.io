@@ -11,14 +11,28 @@
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 31 Jan 2026 21:18:13 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 06 Feb 2026 22:16:28 +0530</lastBuildDate>
     <atom:link href="https://nirajkashyap.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Durable Execution: FSM based Orchestration Platform</title>
+      <link>https://nirajkashyap.github.io/posts/durable-execution-fsm-based-orchestration-platform/</link>
+      <pubDate>Fri, 06 Feb 2026 22:16:28 +0530</pubDate>
+      <guid>https://nirajkashyap.github.io/posts/durable-execution-fsm-based-orchestration-platform/</guid>
+      <description>This section explains how durable workflows persist state, handle failures, and enable resilient automation, drawing parallels to human memory and adaptability. It also highlights how finite state machines provide structure and reliability for modeling and implementing these workflows.</description>
+    </item>
+    <item>
+      <title>Building Machine That Behave Like Human</title>
+      <link>https://nirajkashyap.github.io/posts/building-machine-that-behave-like-human/</link>
+      <pubDate>Fri, 06 Feb 2026 14:43:46 +0530</pubDate>
+      <guid>https://nirajkashyap.github.io/posts/building-machine-that-behave-like-human/</guid>
+      <description>This section explores how machines can emulate human behavior by separating thinking and acting, and by incorporating adaptability and resilience. It discusses how durable execution in software draws inspiration from human traits, enabling systems to persist, recover, and handle real-world complexity through concepts like finite state machines.</description>
+    </item>
     <item>
       <title>Lowest Common Ancestor LCA in Finite State Machines</title>
       <link>https://nirajkashyap.github.io/posts/lowest-common-ancestor-lca-in-finite-state-machines/</link>
       <pubDate>Sat, 31 Jan 2026 21:18:13 +0530</pubDate>
       <guid>https://nirajkashyap.github.io/posts/lowest-common-ancestor-lca-in-finite-state-machines/</guid>
-      <description>Desc Text.</description>
+      <description>Explore the concept of Lowest Common Ancestor (LCA) in trees and state machines, and see how it optimizes transitions in both software and real-world routines. Real-life examples illustrate how LCA streamlines hierarchical processes and state changes.</description>
     </item>
     <item>
       <title>Why Finite State Machines Are Everywhere: From Software to Human Life</title>
@@ -32,7 +46,7 @@
       <link>https://nirajkashyap.github.io/posts/finite-state-machines-backed-by-postgresql-intro/</link>
       <pubDate>Tue, 30 Dec 2025 10:37:22 +0530</pubDate>
       <guid>https://nirajkashyap.github.io/posts/finite-state-machines-backed-by-postgresql-intro/</guid>
-      <description>Learn how to design and implement Finite State Machines (FSM) using PostgreSQL. This blog series covers schema design, state transitions, workflow automation, and best practices for building robust, stateful applications with PostgreSQL as the engine.</description>
+      <description>This section introduces how finite state machines (FSMs) can be implemented in various languages and directly in PostgreSQL, leveraging the database for state management, integrity, and workflow automation. It highlights the benefits of using PostgreSQL for FSMs, including durability, auditability, and centralized control of business processes.</description>
     </item>
   </channel>
 </rss>

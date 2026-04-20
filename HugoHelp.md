@@ -35,23 +35,48 @@ This creates a new folder called `my-blog` for your website.
 
 ---
 
-## 5. Add a Theme (PaperMod)
-Themes make your site look nice. Add PaperMod by running:
+## 5. Add a Theme
+Themes make your site look nice. Choose one theme setup below.
+
+### a. Add PaperMod theme
 ```sh
 git init
 git submodule add https://github.com/adityatelange/hugo-PaperMod themes/PaperMod
+```
+
+### b. Add HugoBook theme
+```sh
+git init
+git submodule add https://github.com/alex-shpak/hugo-book themes/hugo-book
 ```
 If you see any errors, ask for help or search online for "Git install on Mac".
 
 ---
 
 ## 6. Configure Your Site
-Edit the `config.toml` or `hugo.yaml` file in your site folder. Add these lines (example for YAML):
-```yaml
-theme: "PaperMod"
-title: "My Awesome Blog"
+Keep your active site config in `hugo.yaml`. You can also keep theme-specific reference configs in `themeRef/`.
+
+
+### a. PaperMod theme config and reference
+Create a PaperMod reference file.
+```sh
+mkdir -p themeRef
 ```
-You can change the title to anything you like.
+
+
+### b. HugoBook theme config and reference
+Create a HugoBook reference config file:
+```sh
+mkdir -p themeRef
+```
+To run Hugo with a specific reference config, use:
+```sh
+hugo server -D --config themeRef/papermod.theme.hugo.yaml
+```
+or
+```sh
+hugo server -D --config themeRef/hugobook.theme.hugo.yaml
+```
 
 ---
 
@@ -64,24 +89,16 @@ Edit the new file in the `content/posts/` folder. Write your story between the l
 
 ---
 
-## 8. See Your Website Locally
-Run:
-```sh
-hugo server -D
-```
-Open [http://localhost:1313](http://localhost:1313) in your browser. You’ll see your blog!
 
----
-
-## 9. Make Changes & Add More Posts
+## 8. Add More Posts
 - To add more posts: `hugo new posts/another-post.md`
 - To edit posts: Open the file in any text editor and change the content.
 - To see changes: Save the file and refresh your browser.
 
 ---
 
-## 10. Daily Quick Start command 
-- hugo server -D
+## 9. Daily Quick Start command 
+- hugo server -D --config themeRef/hugobook.theme.hugo.yaml
 - hugo new posts/another-post-title.md
 - update below config in another-post-title.md 
     tags: ["first"]

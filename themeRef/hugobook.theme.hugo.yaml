@@ -1,0 +1,21 @@
+baseURL: "https://nirajkashyap.github.io/"
+languageCode: en-us
+title: Niraj Kashyap
+theme: hugo-book
+publishDir: docs
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+params:
+  BookTheme: auto
+  BookToC: true
+  BookSection: docs
+  BookSearch: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

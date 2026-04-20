@@ -150,6 +150,10 @@ One recent shift in workflow orchestration is that many teams no longer start wi
 
 Platforms such as Temporal, DBOS, and Restate follow this pattern. The workflow is expressed in application code or platform-specific constructs, while the runtime handles the hard operational parts such as persistence, retries, timers, waiting for callbacks, and recovery after failure.
 
+This is the core relationship between code-first workflow definitions and durable execution: your code reads like normal step-by-step business logic, but execution state is durably persisted so runs can resume after crashes, deploys, and transient failures without losing progress.
+
+Temporal was the first widely adopted open-source platform to strongly popularize this durable, code-first workflow pattern. After that success, many newer players adopted similar ideas. Vercel Workflows is a recent addition in this trend, as described in "A new programming model for durable execution": https://vercel.com/blog/a-new-programming-model-for-durable-execution.
+
 This approach sits closer to the statechart or FSM side of the spectrum than to pure BPMN-first modeling. The main idea is not that diagrams disappear, but that the executable definition moves closer to the code that already owns business behavior.
 
 That is why many engineering teams prefer this model:
@@ -158,4 +162,93 @@ That is why many engineering teams prefer this model:
 - Changes move through normal CI/CD pipelines.
 - The step order is easy for humans to read in code without translating from a separate diagram.
 - The runtime still provides durable orchestration semantics behind the scenes.
+
+### Platform comparison: Temporal vs DBOS vs Vercel Workflows
+
+| Aspect | Temporal | DBOS | Vercel Workflows |
+| --- | --- | --- | --- |
+| OSS/public start | OSS alpha release: 2020-03-30 | Public OSS SDK release: 2024-03-15 | Beta launch: Oct 2025, GA: 2026-04-16 |
+| Git repository | temporalio/temporal | dbos-inc/dbos-transact-ts | vercel/workflow |
+| Powerful feature | Deterministic replay with built-in durable retries for long-running workflows | Exactly-once durable workflow and queue processing integrated with app code | "use workflow" and "use step" model with managed durable execution and observability |
+| Database/persistence under the hood | Pluggable persistence with PostgreSQL, MySQL, or Cassandra (plus visibility stores) | PostgreSQL-backed workflow state and checkpointing | Managed event-log + queue runtime; exact managed DB engine is not publicly specified; self-hosted reference implementation uses Postgres |
+
+### Full sample code comparison
+
+The examples below use the same simple order workflow so the differences stay easy to compare.
+
+#### Temporal (TypeScript)
+
+```ts
+import { sleep } from "@temporalio/workflow";
+
+export async function orderFlow(id: string) {
+    const payment = await chargeCard(id);
+    await sleep("5m");
+    return await sendConfirmation(payment);
+}
+
+async function chargeCard(id: string) {
+    return { id, status: "charged" };
+}
+
+async function sendConfirmation(payment: { id: string; status: string }) {
+    return { ...payment, email: "sent" };
+}
+```
+
+#### DBOS (TypeScript)
+
+```ts
+import { DBOS } from "@dbos-inc/dbos-sdk";
+
+async function orderFlow(id: string) {
+    const payment = await DBOS.runStep(() => chargeCard(id), { name: "charge" });
+    await DBOS.sleep(300);
+    return await DBOS.runStep(() => sendConfirmation(payment), { name: "confirm" });
+}
+
+async function chargeCard(id: string) {
+    return { id, status: "charged" };
+}
+
+async function sendConfirmation(payment: { id: string; status: string }) {
+    return { ...payment, email: "sent" };
+}
+```
+
+#### Vercel Workflows (TypeScript)
+
+```ts
+import { sleep } from "workflow";
+
+export async function orderFlow(id: string) {
+    "use workflow";
+
+    const payment = await chargeCard(id);
+    await sleep("5m");
+    return await sendConfirmation(payment);
+}
+
+async function chargeCard(id: string) {
+    "use step";
+    return { id, status: "charged" };
+}
+
+async function sendConfirmation(payment: { id: string; status: string }) {
+    "use step";
+    return { ...payment, email: "sent" };
+}
+```
+
+Repository links:
+
+- Temporal: https://github.com/temporalio/temporal
+- DBOS: https://github.com/dbos-inc/dbos-transact-ts
+- Vercel Workflows: https://github.com/vercel/workflow
+
+Reference docs for sample patterns:
+
+- Temporal: https://docs.temporal.io/develop/typescript/workflows/basics
+- DBOS: https://docs.dbos.dev/typescript/tutorials/workflow-tutorial
+- Vercel Workflows: https://workflow-sdk.dev/docs/foundations/workflows-and-steps
 

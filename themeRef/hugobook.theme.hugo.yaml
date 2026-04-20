@@ -1,7 +1,10 @@
 baseURL: "https://nirajkashyap.github.io/"
-languageCode: en-us
 title: Niraj Kashyap
+languageCode: en-us
+pagination.pagerSize: 5
 theme: hugo-book
+
+
 publishDir: docs
 
 enableRobotsTXT: true
@@ -9,13 +12,103 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-params:
-  BookTheme: auto
-  BookToC: true
-  BookSection: docs
-  BookSearch: true
+# Book configuration
+disablePathToLower: true
+enableGitInfo: true
 
+
+# Needed for mermaid/katex shortcodes
 markup:
   goldmark:
     renderer:
       unsafe: true
+  tableOfContents:
+    startLevel: 1
+  highlight:
+    style: base16-snazzy
+
+
+# Multi-lingual mode config
+# There are different options to translate files
+# See https://gohugo.io/content-management/multilingual/#translation-by-filename
+# And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+languages:
+  en:
+    label: English
+    contentDir: content
+    weight: 1
+  # zh:
+  #   label: Chinese
+  #   contentDir: content.zh
+  #   weight: 2
+  # he:
+  #   label: Hebrew
+  #   contentDir: content.he
+  #   direction: rtl
+  #   weight: 3
+
+
+minify:
+  disableXML: true
+  minifyOutput: false
+  # disableCSS: false
+  # # tdewolff:
+  # #   css:
+  # #     # inline: true
+  # #     precision: 1
+  # #     # version: 0
+
+# services:
+#   googleAnalytics:
+#     id: G-H1HMJ6NEW1 # Disable this as we are using GTM
+ 
+
+params:
+  env: production
+  title: Niraj Kashyap
+  gtmID: "GTM-KPZ24GDR"
+  description: "Niraj Kashyap's personal blog and portfolio"
+  keywords: [Blog, Portfolio, Tech, Software, Programming]
+  author: Me
+  images: ["favicon_io/apple-touch-icon.png"]
+
+  BookTheme: auto
+  BookToC: true
+  BookSection: docs
+  BookDateFormat: "January 2, 2006"
+  BookSearch: true
+  BookComments: false
+  BookFavicon: "favicon_io/favicon.ico"
+  BookLogo: "favicon_io/apple-touch-icon.png"
+  BookEditLink: "https://github.com/Nirajkashyap/nirajkashyap.github.io/edit/main/{{ .Path }}"
+
+  analytics:
+    google:
+      SiteVerificationTag: "eKy67xvjTMrmuEu-KizFoWNyijXJvY8rNRcYsxZaMtA"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
+
+
+
+menu:
+  home:
+    - name: "FSM Documentation"
+      pageRef: "/docs/"
+      weight: 1
+    - pageRef: "/docs/example/"
+      weight: 10
+      parent: "Documentation"
+    - name: "Blog"
+      url: "https://github.com/Nirajkashyap/nirajkashyap.github.io"
+      weight: 2
+    - name: "Github"
+      url: "https://github.com/Nirajkashyap"
+      weight: 3
+
+  # before: []
+  after:
+    - name: "Github"
+      url: "https://github.com/Nirajkashyap/nirajkashyap.github.io"
+      weight: 10

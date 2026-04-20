@@ -1,0 +1,12 @@
+title: "BPMN Workflow vs FSM Workflow"
+slug: "bpmn-workflow-fsm"
+status: "draft"
+target_hugo_post: "content/posts/workflow-by-bmpn-VS-workflow-by-fsm.md"
+audience: "engineers, architects"
+voice: "practical, technical"
+primary_question: "When should teams choose BPMN over FSM, and vice versa?"
+quality_bar:
+  require_citations: true
+  flag_conflicts: true
+  include_real_examples: true
+updated_at: "2026-04-20"

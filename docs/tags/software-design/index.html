@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://nirajkashyap.github.io/tags/software-design/">
+  <meta property="og:site_name" content="Niraj Kashyap">
+  <meta property="og:title" content="Software Design">
+  <meta property="og:description" content="Niraj Kashyap&#39;s personal blog and portfolio">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+    <meta property="og:image" content="https://nirajkashyap.github.io/favicon_io/apple-touch-icon.png">
+
+
+  <meta itemprop="name" content="Software Design">
+  <meta itemprop="description" content="Niraj Kashyap&#39;s personal blog and portfolio">
+  <meta itemprop="datePublished" content="2026-01-31T21:18:13+05:30">
+  <meta itemprop="dateModified" content="2026-04-22T00:36:59+05:30">
+  <meta itemprop="image" content="https://nirajkashyap.github.io/favicon_io/apple-touch-icon.png">
+
+<title>Software Design | Niraj Kashyap</title>
+<link rel="icon" href="/favicon_io/favicon.ico" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://nirajkashyap.github.io/tags/software-design/">
+<link rel="stylesheet" href="/book.min.b267f830fdf65302ecc1702a1178d4f25aa783409b3a25098f3404dd24f37a4d.css" integrity="sha256-smf4MP32UwLswXAqEXjU8lqng0CbOiUJjzQE3STzek0=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.1b65b79bf3f910e6a79a87b15166d809196f1415c3060c7989643ea3615ffa7f.js" integrity="sha256-G2W3m/P5EOanmoexUWbYCRlvFBXDBgx5iWQ&#43;o2Ff&#43;n8=" crossorigin="anonymous"></script>
+
+
+<link rel="alternate" type="application/rss+xml" href="https://nirajkashyap.github.io/tags/software-design/index.xml" title="Niraj Kashyap" />
+
+  
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KPZ24GDR');
+</script>
+
+  <style>
+     .social-icons a  {
+      margin: 5px;
+      
+  }
+    .social-icons a svg {
+      height: 26px;
+      width: 26px;
+  }
+  </style>
+</head>
+<body dir="ltr" class="book-kind-term book-type-tags">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/favicon_io/apple-touch-icon.png" alt="Logo" /><span>Niraj Kashyap</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/Durable-Execution-FSM-based-Orchestration-Platform/" class="">
+      Durable Execution: FSM based Orchestration Platform</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/Building-Machine-That-Behave-Like-Human/" class="">
+      Building Machine That Behave Like Human</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/Lowest-Common-Ancestor-LCA-in-Finite-State-Machines/" class="">
+      Lowest Common Ancestor LCA in Finite State Machines</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/Why-Finite-State-Machines-Are-Everywhere-From-Software-to-Human-Life/" class="">
+      Why Finite State Machines Are Everywhere: From Software to Human Life</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/Finite-State-Machines-Backed-by-PostgreSQL-Intro/" class="">
+      Finite State Machines Backed by PostgreSQL Intro</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+<ul><li><a href="/posts/">Blog</a></li><li><a href="https://github.com/Nirajkashyap/nirajkashyap.github.io" target="_blank" rel="noopener">Github</a></li></ul>
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Software Design</h3>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/Lowest-Common-Ancestor-LCA-in-Finite-State-Machines/">Lowest Common Ancestor LCA in Finite State Machines</a>
+    </h2>
+    
+  <div class="flex align-center text-small book-post-date">
+    <img src="/icons/calendar.svg" class="book-icon" alt="Calendar" />
+    <span>January 31, 2026</span>
+  </div>
+
+
+
+  
+
+  
+  <div class="text-small">
+    
+      <a href="/tags/lowest-common-ancestor/">Lowest Common Ancestor</a>, 
+      <a href="/tags/LCA/">LCA</a>, 
+      <a href="/tags/finite-state-machine/">Finite State Machine</a>, 
+      <a href="/tags/FSM/">FSM</a>, 
+      <a href="/tags/state-machines/">State Machines</a>, 
+      <a href="/tags/hierarchical-states/">Hierarchical States</a>, 
+      <a href="/tags/workflow-automation/">Workflow Automation</a>, 
+      <a href="/tags/process-modeling/">Process Modeling</a>, 
+      <a href="/tags/tree-algorithms/">Tree Algorithms</a>, 
+      <a href="/tags/software-design/">Software Design</a>
+  </div>
+  
+
+
+    <div class="book-post-content"><h2 id="what-is-lowest-common-ancestor-lca">What is Lowest Common Ancestor (LCA)?<a class="anchor" href="#what-is-lowest-common-ancestor-lca">#</a></h2>
+<p>The Lowest Common Ancestor (LCA) of two nodes in a tree is the deepest (i.e., lowest) node that is an ancestor of both nodes. In other words, it is the shared ancestor of the two nodes that is located farthest from the root. The concept is fundamental in computer science, especially in the context of tree data structures, such as binary trees, general trees, and state machines.</p></div>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/Why-Finite-State-Machines-Are-Everywhere-From-Software-to-Human-Life/">Why Finite State Machines Are Everywhere: From Software to Human Life</a>
+    </h2>
+    
+  <div class="flex align-center text-small book-post-date">
+    <img src="/icons/calendar.svg" class="book-icon" alt="Calendar" />
+    <span>January 13, 2026</span>
+  </div>
+
+
+
+  
+
+  
+  <div class="text-small">
+    
+      <a href="/tags/finite-state-machine/">Finite State Machine</a>, 
+      <a href="/tags/FSM/">FSM</a>, 
+      <a href="/tags/workflow-automation/">Workflow Automation</a>, 
+      <a href="/tags/software-design/">Software Design</a>, 
+      <a href="/tags/state-management/">State Management</a>, 
+      <a href="/tags/human-behavior/">Human Behavior</a>, 
+      <a href="/tags/process-modeling/">Process Modeling</a>, 
+      <a href="/tags/system-reliability/">System Reliability</a>, 
+      <a href="/tags/real-world-examples/">Real-World Examples</a>
+  </div>
+  
+
+
+    <div class="book-post-content"><h2 id="why-finite-state-machines-are-everywhere-from-software-to-human-life">Why Finite State Machines Are Everywhere: From Software to Human Life<a class="anchor" href="#why-finite-state-machines-are-everywhere-from-software-to-human-life">#</a></h2>
+<p>Finite State Machines (FSMs) are everywhere — whether you are writing software, designing systems, or simply living your daily life. From a login screen that moves from “logged out” to “logged in”, to a human being transitioning from “sleeping” to “working”, the same pattern exists. In this article, we’ll explore what a Finite State Machine is, how it works in software, and why human behavior itself can be understood as a series of states and transitions.</p></div>
+  </article>
+  
+
+  
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+
+
+ 
+        
+  
+ 
+        
+        
+  
+ 
+        
+  
+    <script defer src="/clipboard.min.js"></script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+<aside class="book-toc">
+  <div class="book-toc-content">
+    
+  <nav>
+  <ul>
+  
+    
+    <li class="book-section-flat">
+      <a>Categories</a>
+      <ul>
+      
+      </ul>
+    </li>
+    
+  
+    
+    <li class="book-section-flat">
+      <a>Tags</a>
+      <ul>
+      
+        <li class="flex align-center">
+          <a href="/tags/automation/">Automation</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/business-process/">Business Process</a>
+          <span>2</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/durable-workflow/">Durable Workflow</a>
+          <span>2</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/fault-tolerance/">Fault Tolerance</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/finite-state-machine/">Finite State Machine</a>
+          <span>5</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/microservices/">Microservices</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/PostgreSQL/">PostgreSQL</a>
+          <span>2</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/resilience/">Resilience</a>
+          <span>3</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/state-management/">State Management</a>
+          <span>3</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/workflow-orchestration/">Workflow Orchestration</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/adaptability/">Adaptability</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/AI-systems/">AI Systems</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/durable-execution/">Durable Execution</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/human-like-AI/">Human-Like AI</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/task-management/">Task Management</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/workflow-automation/">Workflow Automation</a>
+          <span>4</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/FSM/">FSM</a>
+          <span>3</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/hierarchical-states/">Hierarchical States</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/LCA/">LCA</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/lowest-common-ancestor/">Lowest Common Ancestor</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/process-modeling/">Process Modeling</a>
+          <span>2</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/software-design/">Software Design</a>
+          <span>2</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/state-machines/">State Machines</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/tree-algorithms/">Tree Algorithms</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/human-behavior/">Human Behavior</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/real-world-examples/">Real-World Examples</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/system-reliability/">System Reliability</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/auditability/">Auditability</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex align-center">
+          <a href="/tags/database-design/">Database Design</a>
+          <span>1</span>
+        </li>
+      
+      </ul>
+    </li>
+    
+  
+  </ul>
+</nav>
+
+
+  </div>
+</aside>
+ 
+  </main>
+
+  
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPZ24GDR"
+          height="0" width="0"
+          style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

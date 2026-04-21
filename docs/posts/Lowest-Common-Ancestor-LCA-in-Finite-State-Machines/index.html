@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore the concept of Lowest Common Ancestor (LCA) in trees and state machines, and see how it optimizes transitions in both software and real-world routines. Real-life examples illustrate how LCA streamlines hierarchical processes and state changes.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://nirajkashyap.github.io/posts/Lowest-Common-Ancestor-LCA-in-Finite-State-Machines/">
+  <meta property="og:site_name" content="Niraj Kashyap">
+  <meta property="og:title" content="Lowest Common Ancestor LCA in Finite State Machines">
+  <meta property="og:description" content="Explore the concept of Lowest Common Ancestor (LCA) in trees and state machines, and see how it optimizes transitions in both software and real-world routines. Real-life examples illustrate how LCA streamlines hierarchical processes and state changes.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-31T21:18:13+05:30">
+    <meta property="article:modified_time" content="2026-04-22T00:36:59+05:30">
+    <meta property="article:tag" content="Lowest Common Ancestor">
+    <meta property="article:tag" content="LCA">
+    <meta property="article:tag" content="Finite State Machine">
+    <meta property="article:tag" content="FSM">
+    <meta property="article:tag" content="State Machines">
+    <meta property="article:tag" content="Hierarchical States">
+    <meta property="og:image" content="https://nirajkashyap.github.io/favicon_io/apple-touch-icon.png">
+
+
+  <meta itemprop="name" content="Lowest Common Ancestor LCA in Finite State Machines">
+  <meta itemprop="description" content="Explore the concept of Lowest Common Ancestor (LCA) in trees and state machines, and see how it optimizes transitions in both software and real-world routines. Real-life examples illustrate how LCA streamlines hierarchical processes and state changes.">
+  <meta itemprop="datePublished" content="2026-01-31T21:18:13+05:30">
+  <meta itemprop="dateModified" content="2026-04-22T00:36:59+05:30">
+  <meta itemprop="wordCount" content="551">
+  <meta itemprop="image" content="https://nirajkashyap.github.io/favicon_io/apple-touch-icon.png">
+  <meta itemprop="keywords" content="Lowest Common Ancestor,LCA,Finite State Machine,FSM,State Machines,Hierarchical States,Workflow Automation,Process Modeling,Tree Algorithms,Software Design">
+
+<title>Lowest Common Ancestor LCA in Finite State Machines | Niraj Kashyap</title>
+<link rel="icon" href="/favicon_io/favicon.ico" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://nirajkashyap.github.io/posts/Lowest-Common-Ancestor-LCA-in-Finite-State-Machines/">
+<link rel="stylesheet" href="/book.min.b267f830fdf65302ecc1702a1178d4f25aa783409b3a25098f3404dd24f37a4d.css" integrity="sha256-smf4MP32UwLswXAqEXjU8lqng0CbOiUJjzQE3STzek0=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.1b65b79bf3f910e6a79a87b15166d809196f1415c3060c7989643ea3615ffa7f.js" integrity="sha256-G2W3m/P5EOanmoexUWbYCRlvFBXDBgx5iWQ&#43;o2Ff&#43;n8=" crossorigin="anonymous"></script>
+
+
+
+  
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KPZ24GDR');
+</script>
+
+  <style>
+     .social-icons a  {
+      margin: 5px;
+      
+  }
+    .social-icons a svg {
+      height: 26px;
+      width: 26px;
+  }
+  </style>
+</head>
+<body dir="ltr" class="book-kind-page book-type-posts">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/favicon_io/apple-touch-icon.png" alt="Logo" /><span>Niraj Kashyap</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/Durable-Execution-FSM-based-Orchestration-Platform/" class="">
+      Durable Execution: FSM based Orchestration Platform</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/Building-Machine-That-Behave-Like-Human/" class="">
+      Building Machine That Behave Like Human</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/Lowest-Common-Ancestor-LCA-in-Finite-State-Machines/" class="active">
+      Lowest Common Ancestor LCA in Finite State Machines</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/Why-Finite-State-Machines-Are-Everywhere-From-Software-to-Human-Life/" class="">
+      Why Finite State Machines Are Everywhere: From Software to Human Life</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/Finite-State-Machines-Backed-by-PostgreSQL-Intro/" class="">
+      Finite State Machines Backed by PostgreSQL Intro</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+<ul><li><a href="/posts/">Blog</a></li><li><a href="https://github.com/Nirajkashyap/nirajkashyap.github.io" target="_blank" rel="noopener">Github</a></li></ul>
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Lowest Common Ancestor LCA in Finite State Machines</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#what-is-lowest-common-ancestor-lca">What is Lowest Common Ancestor (LCA)?</a></li>
+        <li><a href="#real-world-uses-of-lca">Real-World Uses of LCA</a>
+          <ul>
+            <li><a href="#1-filesystem-navigation">1. Filesystem Navigation</a></li>
+            <li><a href="#2-organizational-hierarchies">2. Organizational Hierarchies</a></li>
+            <li><a href="#3-state-machines">3. State Machines</a></li>
+            <li><a href="#4-human-daily-activity-fsm-lca-in-action">4. Human Daily Activity FSM: LCA in Action</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown book-post">
+  <h1>
+    Lowest Common Ancestor LCA in Finite State Machines
+  </h1>
+  
+  <div class="flex align-center text-small book-post-date">
+    <img src="/icons/calendar.svg" class="book-icon" alt="Calendar" />
+    <span>January 31, 2026</span>
+  </div>
+
+
+
+  
+
+  
+  <div class="text-small">
+    
+      <a href="/tags/lowest-common-ancestor/">Lowest Common Ancestor</a>, 
+      <a href="/tags/LCA/">LCA</a>, 
+      <a href="/tags/finite-state-machine/">Finite State Machine</a>, 
+      <a href="/tags/FSM/">FSM</a>, 
+      <a href="/tags/state-machines/">State Machines</a>, 
+      <a href="/tags/hierarchical-states/">Hierarchical States</a>, 
+      <a href="/tags/workflow-automation/">Workflow Automation</a>, 
+      <a href="/tags/process-modeling/">Process Modeling</a>, 
+      <a href="/tags/tree-algorithms/">Tree Algorithms</a>, 
+      <a href="/tags/software-design/">Software Design</a>
+  </div>
+  
+
+
+  <div class="book-post-content markdown-inner"><h2 id="what-is-lowest-common-ancestor-lca">What is Lowest Common Ancestor (LCA)?<a class="anchor" href="#what-is-lowest-common-ancestor-lca">#</a></h2>
+<p>The Lowest Common Ancestor (LCA) of two nodes in a tree is the deepest (i.e., lowest) node that is an ancestor of both nodes. In other words, it is the shared ancestor of the two nodes that is located farthest from the root. The concept is fundamental in computer science, especially in the context of tree data structures, such as binary trees, general trees, and state machines.</p>
+<p>For example, given two nodes in a tree, their LCA is the node that appears on the path from the root to both nodes and is the last such node before the paths to the two nodes diverge. The LCA is useful in various applications, including finding relationships in hierarchical data, optimizing queries in databases, and analyzing state transitions in finite state machines.</p>
+<h2 id="real-world-uses-of-lca">Real-World Uses of LCA<a class="anchor" href="#real-world-uses-of-lca">#</a></h2>
+<p>The concept of Lowest Common Ancestor is widely used in real-world applications where hierarchical relationships exist. Here are a few examples:</p>
+<h3 id="1-filesystem-navigation">1. Filesystem Navigation<a class="anchor" href="#1-filesystem-navigation">#</a></h3>
+<p>In operating systems, files and directories are organized in a tree structure. To find the closest shared directory between two files, the LCA algorithm is used. For example, if you want to find the shortest path to move from one file to another, you first find their LCA (the common parent directory), then traverse up and down the tree accordingly.</p>
+<p><strong>Example:</strong></p>
+<p>Suppose you have the following directory structure:</p>
+<pre tabindex="0"><code>/home/user/
+├── documents/
+│   ├── work/
+│   │   └── report.docx
+│   └── personal/
+│       └── diary.txt</code></pre><p>To find the shortest path from <code>report.docx</code> to <code>diary.txt</code>, the LCA is the <code>documents</code> directory. The path is:</p>
+<p><code>report.docx</code> → <code>work</code> → <code>documents</code> → <code>personal</code> → <code>diary.txt</code></p>
+<h3 id="2-organizational-hierarchies">2. Organizational Hierarchies<a class="anchor" href="#2-organizational-hierarchies">#</a></h3>
+<p>In companies, employees are often organized in a management tree. To find the closest common manager between two employees, the LCA algorithm is used. This is useful for determining reporting structures or resolving permissions.</p>
+<h3 id="3-state-machines">3. State Machines<a class="anchor" href="#3-state-machines">#</a></h3>
+<p>In finite state machines, states can be organized hierarchically. When transitioning between two states, the LCA helps determine the minimal set of exit and entry actions required, optimizing the transition process.</p>
+<h3 id="4-human-daily-activity-fsm-lca-in-action">4. Human Daily Activity FSM: LCA in Action<a class="anchor" href="#4-human-daily-activity-fsm-lca-in-action">#</a></h3>
+<p>Let&rsquo;s model a daily routine as a hierarchical finite state machine (FSM):</p>
+<h4 id="high-level-states">High-Level States<a class="anchor" href="#high-level-states">#</a></h4>
+<ul>
+<li>Sleeping</li>
+<li>Working</li>
+<li>Relaxing</li>
+</ul>
+<h4 id="nested-states-under-working">Nested States (under Working)<a class="anchor" href="#nested-states-under-working">#</a></h4>
+<ul>
+<li>Focused Work</li>
+<li>Meeting</li>
+<li>On Break</li>
+</ul>
+<h4 id="state-hierarchy-tree-view">State Hierarchy (Tree View)<a class="anchor" href="#state-hierarchy-tree-view">#</a></h4>
+<pre tabindex="0"><code>HumanDay
+├── Sleeping
+├── Working        ← LCA
+│   ├── FocusedWork
+│   ├── Meeting
+│   └── OnBreak
+└── Relaxing</code></pre><h4 id="lca-example-1-transition-within-working">LCA Example 1: Transition Within Working<a class="anchor" href="#lca-example-1-transition-within-working">#</a></h4>
+<p>Suppose you&rsquo;re coding (<code>FocusedWork</code>) and a meeting starts. You transition from <code>FocusedWork</code> to <code>Meeting</code>:</p>
+<p><strong>Transition:</strong> <code>FocusedWork</code> → <code>Meeting</code>
+<strong>LCA:</strong> <code>Working</code></p>
+<p><strong>Internal Actions:</strong></p>
+<ul>
+<li>Exit <code>FocusedWork</code></li>
+<li>Stay inside <code>Working</code> (LCA)</li>
+<li>Enter <code>Meeting</code></li>
+</ul>
+<p>No need to exit <code>Working</code> since both states share it as their lowest common ancestor.</p>
+<h4 id="lca-example-2-another-transition-within-working">LCA Example 2: Another Transition Within Working<a class="anchor" href="#lca-example-2-another-transition-within-working">#</a></h4>
+<p>Transition from <code>Meeting</code> to <code>OnBreak</code> (e.g., lunch time):</p>
+<p><strong>Transition:</strong> <code>Meeting</code> → <code>OnBreak</code>
+<strong>LCA:</strong> <code>Working</code></p>
+<p><strong>Internal Actions:</strong></p>
+<ul>
+<li>Exit <code>Meeting</code></li>
+<li>Enter <code>OnBreak</code></li>
+<li><code>Working</code> remains active</li>
+</ul>
+<h4 id="lca-example-3-transition-across-top-level-states">LCA Example 3: Transition Across Top-Level States<a class="anchor" href="#lca-example-3-transition-across-top-level-states">#</a></h4>
+<p>Transition from <code>FocusedWork</code> (nested under <code>Working</code>) to <code>Sleeping</code> (top-level):</p>
+<p><strong>Transition:</strong> <code>FocusedWork</code> → <code>Sleeping</code>
+<strong>LCA:</strong> <code>HumanDay</code> (root)</p>
+<p><strong>Internal Actions:</strong></p>
+<ul>
+<li>Exit <code>FocusedWork</code></li>
+<li>Exit <code>Working</code></li>
+<li>Enter <code>Sleeping</code></li>
+</ul>
+<p>Here, you must exit all nested states up to the root before entering the new top-level state.</p>
+<hr>
+<p>These examples show how LCA helps minimize unnecessary exits and entries, making transitions efficient in both human routines and software state machines.</p>
+</div>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+  <div>
+  
+    <a href="/posts/Building-Machine-That-Behave-Like-Human/" class="flex align-center">
+      <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+      <span>Building Machine That Behave Like Human</span>
+    </a>
+  
+  </div>
+  <div>
+  
+    <a href="/posts/Why-Finite-State-Machines-Are-Everywhere-From-Software-to-Human-Life/" class="flex align-center">
+      <span>Why Finite State Machines Are Everywhere: From Software to Human Life</span>
+      <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+    </a>
+  
+  </div>
+</div>
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+    <script defer src="/clipboard.min.js"></script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#what-is-lowest-common-ancestor-lca">What is Lowest Common Ancestor (LCA)?</a></li>
+        <li><a href="#real-world-uses-of-lca">Real-World Uses of LCA</a>
+          <ul>
+            <li><a href="#1-filesystem-navigation">1. Filesystem Navigation</a></li>
+            <li><a href="#2-organizational-hierarchies">2. Organizational Hierarchies</a></li>
+            <li><a href="#3-state-machines">3. State Machines</a></li>
+            <li><a href="#4-human-daily-activity-fsm-lca-in-action">4. Human Daily Activity FSM: LCA in Action</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPZ24GDR"
+          height="0" width="0"
+          style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This section introduces how finite state machines (FSMs) can be implemented in various languages and directly in PostgreSQL, leveraging the database for state management, integrity, and workflow automation. It highlights the benefits of using PostgreSQL for FSMs, including durability, auditability, and centralized control of business processes.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://nirajkashyap.github.io/posts/Finite-State-Machines-Backed-by-PostgreSQL-Intro/">
+  <meta property="og:site_name" content="Niraj Kashyap">
+  <meta property="og:title" content="Finite State Machines Backed by PostgreSQL Intro">
+  <meta property="og:description" content="This section introduces how finite state machines (FSMs) can be implemented in various languages and directly in PostgreSQL, leveraging the database for state management, integrity, and workflow automation. It highlights the benefits of using PostgreSQL for FSMs, including durability, auditability, and centralized control of business processes.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-12-30T10:37:22+05:30">
+    <meta property="article:modified_time" content="2026-04-22T00:36:59+05:30">
+    <meta property="article:tag" content="Finite State Machine">
+    <meta property="article:tag" content="FSM">
+    <meta property="article:tag" content="PostgreSQL">
+    <meta property="article:tag" content="Workflow Automation">
+    <meta property="article:tag" content="State Management">
+    <meta property="article:tag" content="Database Design">
+    <meta property="og:image" content="https://nirajkashyap.github.io/favicon_io/apple-touch-icon.png">
+
+
+  <meta itemprop="name" content="Finite State Machines Backed by PostgreSQL Intro">
+  <meta itemprop="description" content="This section introduces how finite state machines (FSMs) can be implemented in various languages and directly in PostgreSQL, leveraging the database for state management, integrity, and workflow automation. It highlights the benefits of using PostgreSQL for FSMs, including durability, auditability, and centralized control of business processes.">
+  <meta itemprop="datePublished" content="2025-12-30T10:37:22+05:30">
+  <meta itemprop="dateModified" content="2026-04-22T00:36:59+05:30">
+  <meta itemprop="wordCount" content="580">
+  <meta itemprop="image" content="https://nirajkashyap.github.io/favicon_io/apple-touch-icon.png">
+  <meta itemprop="keywords" content="Finite State Machine,FSM,PostgreSQL,Workflow Automation,State Management,Database Design,Business Process,Durable Workflow,Auditability,Resilience">
+
+<title>Finite State Machines Backed by PostgreSQL Intro | Niraj Kashyap</title>
+<link rel="icon" href="/favicon_io/favicon.ico" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://nirajkashyap.github.io/posts/Finite-State-Machines-Backed-by-PostgreSQL-Intro/">
+<link rel="stylesheet" href="/book.min.b267f830fdf65302ecc1702a1178d4f25aa783409b3a25098f3404dd24f37a4d.css" integrity="sha256-smf4MP32UwLswXAqEXjU8lqng0CbOiUJjzQE3STzek0=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.1b65b79bf3f910e6a79a87b15166d809196f1415c3060c7989643ea3615ffa7f.js" integrity="sha256-G2W3m/P5EOanmoexUWbYCRlvFBXDBgx5iWQ&#43;o2Ff&#43;n8=" crossorigin="anonymous"></script>
+
+
+
+  
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KPZ24GDR');
+</script>
+
+  <style>
+     .social-icons a  {
+      margin: 5px;
+      
+  }
+    .social-icons a svg {
+      height: 26px;
+      width: 26px;
+  }
+  </style>
+</head>
+<body dir="ltr" class="book-kind-page book-type-posts">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/favicon_io/apple-touch-icon.png" alt="Logo" /><span>Niraj Kashyap</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/Durable-Execution-FSM-based-Orchestration-Platform/" class="">
+      Durable Execution: FSM based Orchestration Platform</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/Building-Machine-That-Behave-Like-Human/" class="">
+      Building Machine That Behave Like Human</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/Lowest-Common-Ancestor-LCA-in-Finite-State-Machines/" class="">
+      Lowest Common Ancestor LCA in Finite State Machines</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/Why-Finite-State-Machines-Are-Everywhere-From-Software-to-Human-Life/" class="">
+      Why Finite State Machines Are Everywhere: From Software to Human Life</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/posts/Finite-State-Machines-Backed-by-PostgreSQL-Intro/" class="active">
+      Finite State Machines Backed by PostgreSQL Intro</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+<ul><li><a href="/posts/">Blog</a></li><li><a href="https://github.com/Nirajkashyap/nirajkashyap.github.io" target="_blank" rel="noopener">Github</a></li></ul>
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Finite State Machines Backed by PostgreSQL Intro</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#finite-state-machine-in-various-languages">Finite State Machine: In Various Languages</a></li>
+        <li><a href="#finite-state-machine-in-postgresql">Finite State Machine: In PostgreSQL</a>
+          <ul>
+            <li><a href="#why-an-fsm-in-postgresql-is-useful">Why an FSM in PostgreSQL is Useful</a></li>
+            <li><a href="#how-its-typically-implemented">How It’s Typically Implemented</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown book-post">
+  <h1>
+    Finite State Machines Backed by PostgreSQL Intro
+  </h1>
+  
+  <div class="flex align-center text-small book-post-date">
+    <img src="/icons/calendar.svg" class="book-icon" alt="Calendar" />
+    <span>December 30, 2025</span>
+  </div>
+
+
+
+  
+
+  
+  <div class="text-small">
+    
+      <a href="/tags/finite-state-machine/">Finite State Machine</a>, 
+      <a href="/tags/FSM/">FSM</a>, 
+      <a href="/tags/PostgreSQL/">PostgreSQL</a>, 
+      <a href="/tags/workflow-automation/">Workflow Automation</a>, 
+      <a href="/tags/state-management/">State Management</a>, 
+      <a href="/tags/database-design/">Database Design</a>, 
+      <a href="/tags/business-process/">Business Process</a>, 
+      <a href="/tags/durable-workflow/">Durable Workflow</a>, 
+      <a href="/tags/auditability/">Auditability</a>, 
+      <a href="/tags/resilience/">Resilience</a>
+  </div>
+  
+
+
+  <div class="book-post-content markdown-inner"><p>If you’re new to the concept of <strong>Finite State Machines (FSMs)</strong>, check out my previous blog post: <a href="https://nirajkashyap.github.io/posts/why-finite-state-machines-are-everywhere-from-software-to-human-life/">Why Finite State Machines Are Everywhere: From Software to Human Life</a>. That post explores how FSMs are fundamental to both software systems and real-world processes.</p>
+<hr>
+<h2 id="finite-state-machine-in-various-languages">Finite State Machine: In Various Languages<a class="anchor" href="#finite-state-machine-in-various-languages">#</a></h2>
+<p>FSMs as a concept have been implemented in many programming languages, each with its own data structures and libraries. For example:</p>
+<ul>
+<li><strong>TypeScript/JavaScript</strong>: <a href="https://xstate.js.org/">xstate</a> is a popular library for modeling FSMs and statecharts.</li>
+<li><strong>Python</strong>: Libraries like <a href="https://github.com/pytransitions/transitions">transitions</a> provide easy-to-use FSM implementations.</li>
+<li><strong>Java</strong>: Frameworks such as <a href="https://projects.spring.io/spring-statemachine/">Spring State Machine</a> offer robust FSM support.</li>
+<li><strong>C#</strong>: Libraries like <a href="https://github.com/dotnet-state-machine/stateless">Stateless</a> are widely used for FSMs.</li>
+<li><strong>Go</strong>: Libraries like <a href="https://github.com/looplab/fsm">looplab/fsm</a> provide simple and effective FSM implementations for Go.</li>
+</ul>
+<p>These libraries use different data structures—objects, classes, state tables, or even domain-specific languages—to represent states and transitions, but the core principles remain the same.</p>
+<hr>
+<h2 id="finite-state-machine-in-postgresql">Finite State Machine: In PostgreSQL<a class="anchor" href="#finite-state-machine-in-postgresql">#</a></h2>
+<p>Finite State Machines (FSMs) are powerful tools for modeling workflows, processes, and business logic that involve a series of states and transitions. While FSMs are often implemented in application code, PostgreSQL’s advanced features—such as triggers, constraints, and procedural functions—make it possible to manage state transitions directly within the database.</p>
+<p>Using a finite state machine (FSM) with PostgreSQL means:</p>
+<ul>
+<li>Modeling your workflow or business process as states and transitions</li>
+<li>Letting the database enforce correctness, persistence, and history</li>
+</ul>
+<blockquote class='book-hint '>
+<p>This is powerful because PostgreSQL becomes the single source of truth for both data and state.</p>
+</blockquote><hr>
+<h3 id="why-an-fsm-in-postgresql-is-useful">Why an FSM in PostgreSQL is Useful<a class="anchor" href="#why-an-fsm-in-postgresql-is-useful">#</a></h3>
+<p><strong>1. Strong Data Integrity</strong></p>
+<ul>
+<li>Define allowed states and transitions (e.g., <code>pending → approved</code>, <code>pending → rejected</code>) in tables or constraints</li>
+<li>PostgreSQL can prevent invalid state changes at the database level (via checks, triggers, or dedicated FSM extensions), so your app cannot accidentally jump from <code>shipped</code> back to <code>pending</code></li>
+</ul>
+<p><strong>2. Built‑in Durability and History</strong></p>
+<ul>
+<li>Every state change can be recorded as a row in an audit or history table</li>
+<li>Because Postgres is ACID‑compliant, you get crash‑safe, transactional state updates—exactly what durable workflows need</li>
+</ul>
+<p><strong>3. Simpler, More Auditable Workflows</strong></p>
+<ul>
+<li>Centralize state logic in the database instead of scattering it across services</li>
+<li>Query “where is this order right now?” or “what path did this workflow take?” using plain SQL, making debugging and compliance easier</li>
+</ul>
+<p><strong>4. Scalable Coordination</strong></p>
+<ul>
+<li>Multiple services or workers can read and update the same FSM‑backed records safely, because Postgres handles locking and consistency</li>
+<li>Libraries and extensions or custom SQL‑based FSMs let you define states, transitions, and even multi‑tenant workflows directly in Postgres</li>
+</ul>
+<hr>
+<h3 id="how-its-typically-implemented">How It’s Typically Implemented<a class="anchor" href="#how-its-typically-implemented">#</a></h3>
+<p><strong>Tables for States and Transitions</strong></p>
+<ul>
+<li>A <code>states</code> table lists all valid states</li>
+<li>A <code>transitions</code> table defines which <code>start_state + event</code> can lead to which <code>end_state</code></li>
+<li>An <code>instances</code> table (e.g., orders, jobs) stores the current state of each workflow, and updates go through controlled transitions</li>
+</ul>
+<p><strong>Enforcement via SQL / Extensions</strong></p>
+<ul>
+<li>Enforce transitions using <code>CHECK</code> constraints, triggers, or stored procedures</li>
+<li>Use an FSM extension that adds dedicated functions like <code>fsm.create_state</code> and <code>fsm.create_transition</code></li>
+<li>Some Go or application‑level libraries build an FSM layer on top of Postgres, using a command‑style pattern where each state change is a persisted command that must be processed in order</li>
+</ul>
+<hr>
+<p>In short, putting an FSM inside PostgreSQL gives you durable, auditable, and strongly consistent workflows that are easy to query and hard to break—making it a natural fit for durable execution and human‑like resilient systems.</p>
+<p>The series will guide you through designing robust FSMs, enforcing valid transitions, and leveraging PostgreSQL’s advanced features—such as triggers, constraints, and procedural functions—to manage state transitions directly in the database.</p>
+</div>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+  <div>
+  
+    <a href="/posts/Why-Finite-State-Machines-Are-Everywhere-From-Software-to-Human-Life/" class="flex align-center">
+      <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+      <span>Why Finite State Machines Are Everywhere: From Software to Human Life</span>
+    </a>
+  
+  </div>
+  <div>
+  
+  </div>
+</div>
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+    <script defer src="/clipboard.min.js"></script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#finite-state-machine-in-various-languages">Finite State Machine: In Various Languages</a></li>
+        <li><a href="#finite-state-machine-in-postgresql">Finite State Machine: In PostgreSQL</a>
+          <ul>
+            <li><a href="#why-an-fsm-in-postgresql-is-useful">Why an FSM in PostgreSQL is Useful</a></li>
+            <li><a href="#how-its-typically-implemented">How It’s Typically Implemented</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPZ24GDR"
+          height="0" width="0"
+          style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

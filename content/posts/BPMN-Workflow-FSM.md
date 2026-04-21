@@ -6,35 +6,11 @@ date: '2026-03-27T14:03:00+05:30'
 tags: ["workflow-orchestration", "finite-state-machine", "business-process"]
 author: ["Niraj Kashyap"]
 # author: ["Me", "You"] # multiple authors
-showToc: true
-TocOpen: false
-<!--draft: false  this was default seetings in papermod theme -->
+bookToC: true
 draft: true
-hidemeta: false
-comments: true
+bookComments: true
 description: "How flowcharts, statecharts, and BPMN differ as workflow design and execution models."
 canonicalURL: "https://nirajkashyap.github.io/posts/"
-disableHLJS: true # to disable highlightjs
-disableShare: false
-<!-- disableHLJS: false -->
-hideSummary: false
-searchHidden: true
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: false
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
-cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
-editPost:
-    URL: "https://github.com/Nirajkashyap/nirajkashyap.github.io/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
 
 Workflow conversations often mix up three different layers: how we sketch a process, which tools validate the sketch, and what actually runs in production. This post separates those layers by comparing flowcharts, statecharts (FSMs), and BPMN, so you can choose the right tool for the job.
@@ -49,7 +25,6 @@ A practical definition is simple: a diagram should be visual and helpful.
 - Helpful means it improves understanding, communication, or analysis for a specific audience.
 
 In workflow design, diagrams are communication artifacts first. They help engineers, analysts, and stakeholders align on the same process. But they are not automatically executable. For that, you need runtime semantics and an engine that interprets the model consistently.
-
 
 ## What is UML
 
@@ -141,8 +116,6 @@ Both can model the same business process, but they lead to different execution s
 | Failure handling | Modeled with events/timers and engine features | Modeled as explicit transitions, guards, retries, and error states |
 | Change impact | Diagram changes may be broad and governance-heavy | Transition-level diffs make behavioral impact easier to inspect |
 | Best fit | Cross-team process visibility and compliance | Event-driven systems requiring strict behavioral control |
-
-
 
 ## Recent shift toward code-first workflow definitions
 

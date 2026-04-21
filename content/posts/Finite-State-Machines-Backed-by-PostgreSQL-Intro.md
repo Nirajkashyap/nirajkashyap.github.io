@@ -18,35 +18,11 @@ tags: [
 ]
 author: ["Niraj Kashyap"]
 # author: ["Me", "You"] # multiple authors
-showToc: true
-TocOpen: false
-<!--draft: false  this was default seetings in papermod theme -->
+bookToC: true
 draft: false
-hidemeta: false
-comments: true
+bookComments: true
 description: "This section introduces how finite state machines (FSMs) can be implemented in various languages and directly in PostgreSQL, leveraging the database for state management, integrity, and workflow automation. It highlights the benefits of using PostgreSQL for FSMs, including durability, auditability, and centralized control of business processes."
 canonicalURL: "https://nirajkashyap.github.io/posts/Finite-State-Machines-Backed-by-PostgreSQL-Intro"
-disableHLJS: true # to disable highlightjs
-disableShare: false
-<!-- disableHLJS: false -->
-hideSummary: false
-searchHidden: true
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
-cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
-editPost:
-    URL: "https://github.com/Nirajkashyap/nirajkashyap.github.io/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
 
 If you’re new to the concept of **Finite State Machines (FSMs)**, check out my previous blog post: [Why Finite State Machines Are Everywhere: From Software to Human Life](https://nirajkashyap.github.io/posts/why-finite-state-machines-are-everywhere-from-software-to-human-life/). That post explores how FSMs are fundamental to both software systems and real-world processes.
@@ -122,9 +98,5 @@ Using a finite state machine (FSM) with PostgreSQL means:
 
 In short, putting an FSM inside PostgreSQL gives you durable, auditable, and strongly consistent workflows that are easy to query and hard to break—making it a natural fit for durable execution and human‑like resilient systems.
 
-
 The series will guide you through designing robust FSMs, enforcing valid transitions, and leveraging PostgreSQL’s advanced features—such as triggers, constraints, and procedural functions—to manage state transitions directly in the database.
-
-
-
 

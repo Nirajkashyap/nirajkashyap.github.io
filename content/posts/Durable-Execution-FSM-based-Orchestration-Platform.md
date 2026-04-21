@@ -17,37 +17,12 @@ tags: [
 ]
 author: ["Niraj Kashyap"]
 # author: ["Me", "You"] # multiple authors
-showToc: true
-TocOpen: false
-<!--draft: false  this was default seetings in papermod theme -->
+bookToC: true
 draft: false
-hidemeta: false
-comments: true
+bookComments: true
 description: "This section explains how durable workflows persist state, handle failures, and enable resilient automation, drawing parallels to human memory and adaptability. It also highlights how finite state machines provide structure and reliability for modeling and implementing these workflows."
 canonicalURL: "https://nirajkashyap.github.io/posts/"
-disableHLJS: true # to disable highlightjs
-disableShare: false
-<!-- disableHLJS: false -->
-hideSummary: false
-searchHidden: true
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
-cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
-editPost:
-    URL: "https://github.com/Nirajkashyap/nirajkashyap.github.io/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
-
 
 ## What is a Durable Workflow?
 
@@ -122,8 +97,6 @@ Finite State Machines (FSMs) are a natural fit for durable workflows because the
 
 - Because each workflow instance is in exactly one state at a time, FSMs help avoid race conditions and ensure that only valid transitions happen, even when multiple workers or services are involved.
 
-
-
 ### How FSMs Are Implemented in Durable Workflows Today
 
 Modern durable‑workflow engines either use an explicit FSM model (like AWS Step Functions) or implement an internal FSM‑like structure (like Temporal).
@@ -145,5 +118,4 @@ This approach allows you to build robust, fault-tolerant workflow engines where 
 ---
 
 In the upcoming blog, we will discover [Finite State Machines Backed by PostgreSQL]({{< ref "posts/Finite-State-Machines-Backed-by-PostgreSQL-Intro.md" >}}).
-
 

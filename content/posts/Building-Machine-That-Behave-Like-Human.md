@@ -15,40 +15,14 @@ tags: [
     ]
 author: ["Niraj Kashyap"]
 # author: ["Me", "You"] # multiple authors
-showToc: true
-TocOpen: false
-<!--draft: false  this was default seetings in papermod theme -->
+bookToC: true
 draft: false
-hidemeta: false
-comments: true
+bookComments: true
 description: "This section explores how machines can emulate human behavior by separating thinking and acting, and by incorporating adaptability and resilience. It discusses how durable execution in software draws inspiration from human traits, enabling systems to persist, recover, and handle real-world complexity through concepts like finite state machines."
 canonicalURL: "https://nirajkashyap.github.io/posts/"
-disableHLJS: true # to disable highlightjs
-disableShare: false
-<!-- disableHLJS: false -->
-hideSummary: false
-searchHidden: true
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: false
-cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
-editPost:
-    URL: "https://github.com/Nirajkashyap/nirajkashyap.github.io/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
 
-
 ### The Think–Act Model of Human Behavior
-
 
 Human action for any task can be divided into two main parts:
 
@@ -76,13 +50,11 @@ This blog post explores how the core principles behind human traits such as adap
 
 By drawing inspiration from human intelligence and action, we aim to build systems that are robust, flexible, and capable of handling real-world challenges.
 
-
 Durable execution is not just a technical term—it is deeply rooted in how humans naturally operate. In everyday life, when we encounter interruptions, distraction or failures, we rarely start over from scratch. Instead, we remember our progress, recall our goals, and resume from where we left off. This ability to persist state and recover is fundamental to human effectiveness.
 
 Similarly, durable workflow systems in software are designed to mimic this human trait. By persisting the state of a process and enabling it to resume after a disruption, these systems bring human-like resilience and continuity to automation. Modeling workflows as finite state machines (FSMs) and storing their state externally (such as in a database) allows software to handle interruptions gracefully—just as humans do.
 
 In this blog, we will see how these ideas can be applied to build machines and workflows that are not only technically robust but also inspired by the way humans act and adapt in the real world.
-
 
 ![Alt text](/image-1.png)
 
@@ -94,8 +66,5 @@ Durable execution (or durable workflow) refers to the ability of a system to rel
 
 Durable workflows are essential for business processes that span hours, days, or even weeks, and require reliability, consistency, and recoverability.
 
-
 In the upcoming blog, we will discover [Durable Execution:FSM based Orchestration Platform]({{< ref "posts/Durable-Execution-FSM-based-Orchestration-Platform.md" >}}).
-
-
 

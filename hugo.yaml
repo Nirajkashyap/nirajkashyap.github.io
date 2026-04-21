@@ -74,7 +74,7 @@ params:
 
   BookTheme: auto
   BookToC: true
-  BookSection: docs
+  BookSection: posts # docs if you want to use it as documentation site
   BookDateFormat: "January 2, 2006"
   BookSearch: true
   BookComments: false
@@ -94,21 +94,27 @@ params:
 
 menu:
   home:
-    - name: "FSM Documentation"
-      pageRef: "/docs/"
-      weight: 1
-    - pageRef: "/docs/example/"
-      weight: 10
-      parent: "Documentation"
+    # - name: "Documentation"
+    #   pageRef: "/docs/"
+    #   weight: 1
+    # - pageRef: "/docs/example/"
+    #   weight: 1
+    #   parent: "Documentation"
     - name: "Blog"
       url: "https://github.com/Nirajkashyap/nirajkashyap.github.io"
       weight: 2
+    - name: "Blog"
+      url: "/posts/"
+      weight: 3  
     - name: "Github"
       url: "https://github.com/Nirajkashyap"
       weight: 3
 
   # before: []
   after:
+    - name: "Blog"
+      url: "/posts/"
+      weight: 10
     - name: "Github"
       url: "https://github.com/Nirajkashyap/nirajkashyap.github.io"
-      weight: 10
+      weight: 20

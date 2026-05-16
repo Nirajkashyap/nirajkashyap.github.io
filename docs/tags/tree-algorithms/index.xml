@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tree Algorithms on Niraj Kashyap</title>
-    <link>http://localhost:1313/tags/tree-algorithms/</link>
+    <link>https://nirajkashyap.github.io/tags/tree-algorithms/</link>
     <description>Recent content in Tree Algorithms on Niraj Kashyap</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Jan 2026 21:18:13 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/tree-algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 May 2026 22:14:09 +0530</lastBuildDate>
+    <atom:link href="https://nirajkashyap.github.io/tags/tree-algorithms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lowest Common Ancestor LCA in Finite State Machines</title>
-      <link>http://localhost:1313/posts/Lowest-Common-Ancestor-LCA-in-Finite-State-Machines/</link>
+      <link>https://nirajkashyap.github.io/posts/Lowest-Common-Ancestor-LCA-in-Finite-State-Machines/</link>
       <pubDate>Sat, 31 Jan 2026 21:18:13 +0530</pubDate>
-      <guid>http://localhost:1313/posts/Lowest-Common-Ancestor-LCA-in-Finite-State-Machines/</guid>
+      <guid>https://nirajkashyap.github.io/posts/Lowest-Common-Ancestor-LCA-in-Finite-State-Machines/</guid>
       <description>&lt;h2 id=&#34;what-is-lowest-common-ancestor-lca&#34;&gt;What is Lowest Common Ancestor (LCA)?&lt;a class=&#34;anchor&#34; href=&#34;#what-is-lowest-common-ancestor-lca&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The Lowest Common Ancestor (LCA) of two nodes in a tree is the deepest (i.e., lowest) node that is an ancestor of both nodes. In other words, it is the shared ancestor of the two nodes that is located farthest from the root. The concept is fundamental in computer science, especially in the context of tree data structures, such as binary trees, general trees, and state machines.&lt;/p&gt;</description>
     </item>
   </channel>

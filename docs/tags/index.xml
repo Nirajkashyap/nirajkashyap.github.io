@@ -2,213 +2,213 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Niraj Kashyap</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://nirajkashyap.github.io/tags/</link>
     <description>Recent content in Tags on Niraj Kashyap</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Feb 2026 22:16:28 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 May 2026 22:14:09 +0530</lastBuildDate>
+    <atom:link href="https://nirajkashyap.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automation</title>
-      <link>http://localhost:1313/tags/automation/</link>
+      <link>https://nirajkashyap.github.io/tags/automation/</link>
       <pubDate>Fri, 06 Feb 2026 22:16:28 +0530</pubDate>
-      <guid>http://localhost:1313/tags/automation/</guid>
+      <guid>https://nirajkashyap.github.io/tags/automation/</guid>
       <description></description>
     </item>
     <item>
       <title>Business Process</title>
-      <link>http://localhost:1313/tags/business-process/</link>
+      <link>https://nirajkashyap.github.io/tags/business-process/</link>
       <pubDate>Fri, 06 Feb 2026 22:16:28 +0530</pubDate>
-      <guid>http://localhost:1313/tags/business-process/</guid>
+      <guid>https://nirajkashyap.github.io/tags/business-process/</guid>
       <description></description>
     </item>
     <item>
       <title>Durable Workflow</title>
-      <link>http://localhost:1313/tags/durable-workflow/</link>
+      <link>https://nirajkashyap.github.io/tags/durable-workflow/</link>
       <pubDate>Fri, 06 Feb 2026 22:16:28 +0530</pubDate>
-      <guid>http://localhost:1313/tags/durable-workflow/</guid>
+      <guid>https://nirajkashyap.github.io/tags/durable-workflow/</guid>
       <description></description>
     </item>
     <item>
       <title>Fault Tolerance</title>
-      <link>http://localhost:1313/tags/fault-tolerance/</link>
+      <link>https://nirajkashyap.github.io/tags/fault-tolerance/</link>
       <pubDate>Fri, 06 Feb 2026 22:16:28 +0530</pubDate>
-      <guid>http://localhost:1313/tags/fault-tolerance/</guid>
+      <guid>https://nirajkashyap.github.io/tags/fault-tolerance/</guid>
       <description></description>
     </item>
     <item>
       <title>Finite State Machine</title>
-      <link>http://localhost:1313/tags/finite-state-machine/</link>
+      <link>https://nirajkashyap.github.io/tags/finite-state-machine/</link>
       <pubDate>Fri, 06 Feb 2026 22:16:28 +0530</pubDate>
-      <guid>http://localhost:1313/tags/finite-state-machine/</guid>
+      <guid>https://nirajkashyap.github.io/tags/finite-state-machine/</guid>
       <description></description>
     </item>
     <item>
       <title>Microservices</title>
-      <link>http://localhost:1313/tags/microservices/</link>
+      <link>https://nirajkashyap.github.io/tags/microservices/</link>
       <pubDate>Fri, 06 Feb 2026 22:16:28 +0530</pubDate>
-      <guid>http://localhost:1313/tags/microservices/</guid>
+      <guid>https://nirajkashyap.github.io/tags/microservices/</guid>
       <description></description>
     </item>
     <item>
       <title>PostgreSQL</title>
-      <link>http://localhost:1313/tags/PostgreSQL/</link>
+      <link>https://nirajkashyap.github.io/tags/PostgreSQL/</link>
       <pubDate>Fri, 06 Feb 2026 22:16:28 +0530</pubDate>
-      <guid>http://localhost:1313/tags/PostgreSQL/</guid>
+      <guid>https://nirajkashyap.github.io/tags/PostgreSQL/</guid>
       <description></description>
     </item>
     <item>
       <title>Resilience</title>
-      <link>http://localhost:1313/tags/resilience/</link>
+      <link>https://nirajkashyap.github.io/tags/resilience/</link>
       <pubDate>Fri, 06 Feb 2026 22:16:28 +0530</pubDate>
-      <guid>http://localhost:1313/tags/resilience/</guid>
+      <guid>https://nirajkashyap.github.io/tags/resilience/</guid>
       <description></description>
     </item>
     <item>
       <title>State Management</title>
-      <link>http://localhost:1313/tags/state-management/</link>
+      <link>https://nirajkashyap.github.io/tags/state-management/</link>
       <pubDate>Fri, 06 Feb 2026 22:16:28 +0530</pubDate>
-      <guid>http://localhost:1313/tags/state-management/</guid>
+      <guid>https://nirajkashyap.github.io/tags/state-management/</guid>
       <description></description>
     </item>
     <item>
       <title>Workflow Orchestration</title>
-      <link>http://localhost:1313/tags/workflow-orchestration/</link>
+      <link>https://nirajkashyap.github.io/tags/workflow-orchestration/</link>
       <pubDate>Fri, 06 Feb 2026 22:16:28 +0530</pubDate>
-      <guid>http://localhost:1313/tags/workflow-orchestration/</guid>
+      <guid>https://nirajkashyap.github.io/tags/workflow-orchestration/</guid>
       <description></description>
     </item>
     <item>
       <title>Adaptability</title>
-      <link>http://localhost:1313/tags/adaptability/</link>
+      <link>https://nirajkashyap.github.io/tags/adaptability/</link>
       <pubDate>Fri, 06 Feb 2026 14:43:46 +0530</pubDate>
-      <guid>http://localhost:1313/tags/adaptability/</guid>
+      <guid>https://nirajkashyap.github.io/tags/adaptability/</guid>
       <description></description>
     </item>
     <item>
       <title>AI Systems</title>
-      <link>http://localhost:1313/tags/AI-systems/</link>
+      <link>https://nirajkashyap.github.io/tags/AI-systems/</link>
       <pubDate>Fri, 06 Feb 2026 14:43:46 +0530</pubDate>
-      <guid>http://localhost:1313/tags/AI-systems/</guid>
+      <guid>https://nirajkashyap.github.io/tags/AI-systems/</guid>
       <description></description>
     </item>
     <item>
       <title>Durable Execution</title>
-      <link>http://localhost:1313/tags/durable-execution/</link>
+      <link>https://nirajkashyap.github.io/tags/durable-execution/</link>
       <pubDate>Fri, 06 Feb 2026 14:43:46 +0530</pubDate>
-      <guid>http://localhost:1313/tags/durable-execution/</guid>
+      <guid>https://nirajkashyap.github.io/tags/durable-execution/</guid>
       <description></description>
     </item>
     <item>
       <title>Human-Like AI</title>
-      <link>http://localhost:1313/tags/human-like-AI/</link>
+      <link>https://nirajkashyap.github.io/tags/human-like-AI/</link>
       <pubDate>Fri, 06 Feb 2026 14:43:46 +0530</pubDate>
-      <guid>http://localhost:1313/tags/human-like-AI/</guid>
+      <guid>https://nirajkashyap.github.io/tags/human-like-AI/</guid>
       <description></description>
     </item>
     <item>
       <title>Task Management</title>
-      <link>http://localhost:1313/tags/task-management/</link>
+      <link>https://nirajkashyap.github.io/tags/task-management/</link>
       <pubDate>Fri, 06 Feb 2026 14:43:46 +0530</pubDate>
-      <guid>http://localhost:1313/tags/task-management/</guid>
+      <guid>https://nirajkashyap.github.io/tags/task-management/</guid>
       <description></description>
     </item>
     <item>
       <title>Workflow Automation</title>
-      <link>http://localhost:1313/tags/workflow-automation/</link>
+      <link>https://nirajkashyap.github.io/tags/workflow-automation/</link>
       <pubDate>Fri, 06 Feb 2026 14:43:46 +0530</pubDate>
-      <guid>http://localhost:1313/tags/workflow-automation/</guid>
+      <guid>https://nirajkashyap.github.io/tags/workflow-automation/</guid>
       <description></description>
     </item>
     <item>
       <title>FSM</title>
-      <link>http://localhost:1313/tags/FSM/</link>
+      <link>https://nirajkashyap.github.io/tags/FSM/</link>
       <pubDate>Sat, 31 Jan 2026 21:18:13 +0530</pubDate>
-      <guid>http://localhost:1313/tags/FSM/</guid>
+      <guid>https://nirajkashyap.github.io/tags/FSM/</guid>
       <description></description>
     </item>
     <item>
       <title>Hierarchical States</title>
-      <link>http://localhost:1313/tags/hierarchical-states/</link>
+      <link>https://nirajkashyap.github.io/tags/hierarchical-states/</link>
       <pubDate>Sat, 31 Jan 2026 21:18:13 +0530</pubDate>
-      <guid>http://localhost:1313/tags/hierarchical-states/</guid>
+      <guid>https://nirajkashyap.github.io/tags/hierarchical-states/</guid>
       <description></description>
     </item>
     <item>
       <title>LCA</title>
-      <link>http://localhost:1313/tags/LCA/</link>
+      <link>https://nirajkashyap.github.io/tags/LCA/</link>
       <pubDate>Sat, 31 Jan 2026 21:18:13 +0530</pubDate>
-      <guid>http://localhost:1313/tags/LCA/</guid>
+      <guid>https://nirajkashyap.github.io/tags/LCA/</guid>
       <description></description>
     </item>
     <item>
       <title>Lowest Common Ancestor</title>
-      <link>http://localhost:1313/tags/lowest-common-ancestor/</link>
+      <link>https://nirajkashyap.github.io/tags/lowest-common-ancestor/</link>
       <pubDate>Sat, 31 Jan 2026 21:18:13 +0530</pubDate>
-      <guid>http://localhost:1313/tags/lowest-common-ancestor/</guid>
+      <guid>https://nirajkashyap.github.io/tags/lowest-common-ancestor/</guid>
       <description></description>
     </item>
     <item>
       <title>Process Modeling</title>
-      <link>http://localhost:1313/tags/process-modeling/</link>
+      <link>https://nirajkashyap.github.io/tags/process-modeling/</link>
       <pubDate>Sat, 31 Jan 2026 21:18:13 +0530</pubDate>
-      <guid>http://localhost:1313/tags/process-modeling/</guid>
+      <guid>https://nirajkashyap.github.io/tags/process-modeling/</guid>
       <description></description>
     </item>
     <item>
       <title>Software Design</title>
-      <link>http://localhost:1313/tags/software-design/</link>
+      <link>https://nirajkashyap.github.io/tags/software-design/</link>
       <pubDate>Sat, 31 Jan 2026 21:18:13 +0530</pubDate>
-      <guid>http://localhost:1313/tags/software-design/</guid>
+      <guid>https://nirajkashyap.github.io/tags/software-design/</guid>
       <description></description>
     </item>
     <item>
       <title>State Machines</title>
-      <link>http://localhost:1313/tags/state-machines/</link>
+      <link>https://nirajkashyap.github.io/tags/state-machines/</link>
       <pubDate>Sat, 31 Jan 2026 21:18:13 +0530</pubDate>
-      <guid>http://localhost:1313/tags/state-machines/</guid>
+      <guid>https://nirajkashyap.github.io/tags/state-machines/</guid>
       <description></description>
     </item>
     <item>
       <title>Tree Algorithms</title>
-      <link>http://localhost:1313/tags/tree-algorithms/</link>
+      <link>https://nirajkashyap.github.io/tags/tree-algorithms/</link>
       <pubDate>Sat, 31 Jan 2026 21:18:13 +0530</pubDate>
-      <guid>http://localhost:1313/tags/tree-algorithms/</guid>
+      <guid>https://nirajkashyap.github.io/tags/tree-algorithms/</guid>
       <description></description>
     </item>
     <item>
       <title>Human Behavior</title>
-      <link>http://localhost:1313/tags/human-behavior/</link>
+      <link>https://nirajkashyap.github.io/tags/human-behavior/</link>
       <pubDate>Tue, 13 Jan 2026 21:03:08 +0530</pubDate>
-      <guid>http://localhost:1313/tags/human-behavior/</guid>
+      <guid>https://nirajkashyap.github.io/tags/human-behavior/</guid>
       <description></description>
     </item>
     <item>
       <title>Real-World Examples</title>
-      <link>http://localhost:1313/tags/real-world-examples/</link>
+      <link>https://nirajkashyap.github.io/tags/real-world-examples/</link>
       <pubDate>Tue, 13 Jan 2026 21:03:08 +0530</pubDate>
-      <guid>http://localhost:1313/tags/real-world-examples/</guid>
+      <guid>https://nirajkashyap.github.io/tags/real-world-examples/</guid>
       <description></description>
     </item>
     <item>
       <title>System Reliability</title>
-      <link>http://localhost:1313/tags/system-reliability/</link>
+      <link>https://nirajkashyap.github.io/tags/system-reliability/</link>
       <pubDate>Tue, 13 Jan 2026 21:03:08 +0530</pubDate>
-      <guid>http://localhost:1313/tags/system-reliability/</guid>
+      <guid>https://nirajkashyap.github.io/tags/system-reliability/</guid>
       <description></description>
     </item>
     <item>
       <title>Auditability</title>
-      <link>http://localhost:1313/tags/auditability/</link>
+      <link>https://nirajkashyap.github.io/tags/auditability/</link>
       <pubDate>Tue, 30 Dec 2025 10:37:22 +0530</pubDate>
-      <guid>http://localhost:1313/tags/auditability/</guid>
+      <guid>https://nirajkashyap.github.io/tags/auditability/</guid>
       <description></description>
     </item>
     <item>
       <title>Database Design</title>
-      <link>http://localhost:1313/tags/database-design/</link>
+      <link>https://nirajkashyap.github.io/tags/database-design/</link>
       <pubDate>Tue, 30 Dec 2025 10:37:22 +0530</pubDate>
-      <guid>http://localhost:1313/tags/database-design/</guid>
+      <guid>https://nirajkashyap.github.io/tags/database-design/</guid>
       <description></description>
     </item>
   </channel>

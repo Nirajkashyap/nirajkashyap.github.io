@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Microservices on Niraj Kashyap</title>
-    <link>http://localhost:1313/tags/microservices/</link>
+    <link>https://nirajkashyap.github.io/tags/microservices/</link>
     <description>Recent content in Microservices on Niraj Kashyap</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Feb 2026 22:16:28 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/microservices/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 May 2026 22:14:09 +0530</lastBuildDate>
+    <atom:link href="https://nirajkashyap.github.io/tags/microservices/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Durable Execution: FSM based Orchestration Platform</title>
-      <link>http://localhost:1313/posts/Durable-Execution-FSM-based-Orchestration-Platform/</link>
+      <link>https://nirajkashyap.github.io/posts/Durable-Execution-FSM-based-Orchestration-Platform/</link>
       <pubDate>Fri, 06 Feb 2026 22:16:28 +0530</pubDate>
-      <guid>http://localhost:1313/posts/Durable-Execution-FSM-based-Orchestration-Platform/</guid>
+      <guid>https://nirajkashyap.github.io/posts/Durable-Execution-FSM-based-Orchestration-Platform/</guid>
       <description>&lt;h2 id=&#34;what-is-a-durable-workflow&#34;&gt;What is a Durable Workflow?&lt;a class=&#34;anchor&#34; href=&#34;#what-is-a-durable-workflow&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;durable workflow&lt;/strong&gt; is a long‑running, stateful business process that automatically remembers where it left off, survives crashes or restarts, and can resume or retry instead of starting over.&lt;/p&gt;&#xA;&lt;p&gt;Unlike a simple script that runs once and dies, a durable workflow:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Persists its state&lt;/strong&gt; (current step, variables, context) in a database or durable store&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Handles timeouts, retries, and failures&lt;/strong&gt; without losing progress&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Supports human‑in‑the‑loop steps, approvals, and external events&lt;/strong&gt; (e.g., a user clicking “confirm”)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote class=&#39;book-hint &#39;&gt;&#xA;&lt;p&gt;In effect, durable workflows bring human‑like resilience to automation: they pause, recover, and continue, just like a person who remembers what they’ve already done.&lt;/p&gt;</description>
     </item>
   </channel>

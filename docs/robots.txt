@@ -1,9 +1,9 @@
 Niraj Kashyap
 
-- Durable Execution: FSM based Orchestration Platform: http://localhost:1313/posts/Durable-Execution-FSM-based-Orchestration-Platform/
-- Building Machine That Behave Like Human: http://localhost:1313/posts/Building-Machine-That-Behave-Like-Human/
-- Lowest Common Ancestor LCA in Finite State Machines: http://localhost:1313/posts/Lowest-Common-Ancestor-LCA-in-Finite-State-Machines/
-- Why Finite State Machines Are Everywhere: From Software to Human Life: http://localhost:1313/posts/Why-Finite-State-Machines-Are-Everywhere-From-Software-to-Human-Life/
-- Finite State Machines Backed by PostgreSQL Intro: http://localhost:1313/posts/Finite-State-Machines-Backed-by-PostgreSQL-Intro/
+- Durable Execution: FSM based Orchestration Platform: https://nirajkashyap.github.io/posts/Durable-Execution-FSM-based-Orchestration-Platform/
+- Building Machine That Behave Like Human: https://nirajkashyap.github.io/posts/Building-Machine-That-Behave-Like-Human/
+- Lowest Common Ancestor LCA in Finite State Machines: https://nirajkashyap.github.io/posts/Lowest-Common-Ancestor-LCA-in-Finite-State-Machines/
+- Why Finite State Machines Are Everywhere: From Software to Human Life: https://nirajkashyap.github.io/posts/Why-Finite-State-Machines-Are-Everywhere-From-Software-to-Human-Life/
+- Finite State Machines Backed by PostgreSQL Intro: https://nirajkashyap.github.io/posts/Finite-State-Machines-Backed-by-PostgreSQL-Intro/
 
 

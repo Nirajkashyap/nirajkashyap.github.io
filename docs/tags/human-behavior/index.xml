@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Human Behavior on Niraj Kashyap</title>
-    <link>http://localhost:1313/tags/human-behavior/</link>
+    <link>https://nirajkashyap.github.io/tags/human-behavior/</link>
     <description>Recent content in Human Behavior on Niraj Kashyap</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Jan 2026 21:03:08 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/human-behavior/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 May 2026 22:14:09 +0530</lastBuildDate>
+    <atom:link href="https://nirajkashyap.github.io/tags/human-behavior/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Finite State Machines Are Everywhere: From Software to Human Life</title>
-      <link>http://localhost:1313/posts/Why-Finite-State-Machines-Are-Everywhere-From-Software-to-Human-Life/</link>
+      <link>https://nirajkashyap.github.io/posts/Why-Finite-State-Machines-Are-Everywhere-From-Software-to-Human-Life/</link>
       <pubDate>Tue, 13 Jan 2026 21:03:08 +0530</pubDate>
-      <guid>http://localhost:1313/posts/Why-Finite-State-Machines-Are-Everywhere-From-Software-to-Human-Life/</guid>
+      <guid>https://nirajkashyap.github.io/posts/Why-Finite-State-Machines-Are-Everywhere-From-Software-to-Human-Life/</guid>
       <description>&lt;h2 id=&#34;why-finite-state-machines-are-everywhere-from-software-to-human-life&#34;&gt;Why Finite State Machines Are Everywhere: From Software to Human Life&lt;a class=&#34;anchor&#34; href=&#34;#why-finite-state-machines-are-everywhere-from-software-to-human-life&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Finite State Machines (FSMs) are everywhere — whether you are writing software, designing systems, or simply living your daily life. From a login screen that moves from “logged out” to “logged in”, to a human being transitioning from “sleeping” to “working”, the same pattern exists. In this article, we’ll explore what a Finite State Machine is, how it works in software, and why human behavior itself can be understood as a series of states and transitions.&lt;/p&gt;</description>
     </item>
   </channel>

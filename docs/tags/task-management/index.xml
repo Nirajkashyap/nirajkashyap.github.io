@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Task Management on Niraj Kashyap</title>
-    <link>http://localhost:1313/tags/task-management/</link>
+    <link>https://nirajkashyap.github.io/tags/task-management/</link>
     <description>Recent content in Task Management on Niraj Kashyap</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Feb 2026 14:43:46 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/task-management/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 May 2026 22:14:09 +0530</lastBuildDate>
+    <atom:link href="https://nirajkashyap.github.io/tags/task-management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building Machine That Behave Like Human</title>
-      <link>http://localhost:1313/posts/Building-Machine-That-Behave-Like-Human/</link>
+      <link>https://nirajkashyap.github.io/posts/Building-Machine-That-Behave-Like-Human/</link>
       <pubDate>Fri, 06 Feb 2026 14:43:46 +0530</pubDate>
-      <guid>http://localhost:1313/posts/Building-Machine-That-Behave-Like-Human/</guid>
+      <guid>https://nirajkashyap.github.io/posts/Building-Machine-That-Behave-Like-Human/</guid>
       <description>&lt;h3 id=&#34;the-thinkact-model-of-human-behavior&#34;&gt;The Think–Act Model of Human Behavior&lt;a class=&#34;anchor&#34; href=&#34;#the-thinkact-model-of-human-behavior&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Human action for any task can be divided into two main parts:&lt;/p&gt;&#xA;&lt;h4 id=&#34;1-think&#34;&gt;1. Think&lt;a class=&#34;anchor&#34; href=&#34;#1-think&#34;&gt;#&lt;/a&gt;&lt;/h4&gt;&#xA;&lt;p&gt;This involves perception, reasoning, and decision-making. Today, Large Language Models (LLMs) and AI systems are increasingly capable of handling the &amp;ldquo;thinking&amp;rdquo; part—analyzing information, generating ideas, and making recommendations.&lt;/p&gt;&#xA;&lt;h4 id=&#34;2-act&#34;&gt;2. Act&lt;a class=&#34;anchor&#34; href=&#34;#2-act&#34;&gt;#&lt;/a&gt;&lt;/h4&gt;&#xA;&lt;p&gt;Acting is about executing decisions in the real world. Human actions are shaped by goals, context, memory, and experience. Importantly, when humans act, they are able to handle interruptions—pausing, resuming, or adapting their actions as needed. This resilience allows us to recover from distractions or failures and continue working toward our objectives without starting over.&lt;/p&gt;</description>
     </item>
   </channel>

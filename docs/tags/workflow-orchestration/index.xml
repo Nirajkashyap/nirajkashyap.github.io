@@ -1,27 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Workflow-Orchestration on Niraj Kashyap</title>
+    <title>Workflow Orchestration on Niraj Kashyap</title>
     <link>http://localhost:1313/tags/workflow-orchestration/</link>
-    <description>Recent content in Workflow-Orchestration on Niraj Kashyap</description>
+    <description>Recent content in Workflow Orchestration on Niraj Kashyap</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2026 00:36:59 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 06 Feb 2026 22:16:28 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/workflow-orchestration/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Flowchart vs Statechart vs BPMN: Which Runs Workflows?</title>
-      <link>http://localhost:1313/posts/BPMN-Workflow-FSM/</link>
-      <pubDate>Fri, 27 Mar 2026 14:03:00 +0530</pubDate>
-      <guid>http://localhost:1313/posts/BPMN-Workflow-FSM/</guid>
-      <description>&lt;p&gt;Workflow conversations often mix up three different layers: how we sketch a process, which tools validate the sketch, and what actually runs in production. This post separates those layers by comparing flowcharts, statecharts (FSMs), and BPMN, so you can choose the right tool for the job.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-a-diagram&#34;&gt;What is a diagram&lt;a class=&#34;anchor&#34; href=&#34;#what-is-a-diagram&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;A diagram is a visual model of behavior, structure, or flow. It helps people share understanding faster than plain text by showing relationships, order, and boundaries in one view.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Flowchart vs Statechart vs BPMN: Which Runs Workflows?</title>
-      <link>http://localhost:1313/posts/workflow-by-bmpn-VS-workflow-by-fsm/</link>
-      <pubDate>Fri, 27 Mar 2026 14:03:00 +0530</pubDate>
-      <guid>http://localhost:1313/posts/workflow-by-bmpn-VS-workflow-by-fsm/</guid>
-      <description>&lt;p&gt;Workflow conversations often mix up three different layers: how we sketch a process, which tools validate the sketch, and what actually runs in production. This post separates those layers by comparing flowcharts, statecharts (FSMs), and BPMN, so you can choose the right tool for the job.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-a-diagram&#34;&gt;What is a diagram&lt;a class=&#34;anchor&#34; href=&#34;#what-is-a-diagram&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;A diagram is a visual model of behavior, structure, or flow. It helps people share understanding faster than plain text by showing relationships, order, and boundaries in one view.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Durable Execution: FSM based Orchestration Platform</title>
       <link>http://localhost:1313/posts/Durable-Execution-FSM-based-Orchestration-Platform/</link>

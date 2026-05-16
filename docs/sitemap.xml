@@ -3,140 +3,128 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/docs/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/docs/Get-Started-With-TypeScript/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/docs/Get-Started-With-Python/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/docs/Get-Started-With-Python/quick-start/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/docs/Get-Started-With-TypeScript/quick-start/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/docs/Get-Started-With-Python/install/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/business-process/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/finite-state-machine/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/BPMN-Workflow-FSM/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/workflow-by-bmpn-VS-workflow-by-fsm/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/workflow-orchestration/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/automation/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
+    <lastmod>2026-02-06T22:16:28+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/business-process/</loc>
+    <lastmod>2026-02-06T22:16:28+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/Durable-Execution-FSM-based-Orchestration-Platform/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
+    <lastmod>2026-02-06T22:16:28+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/durable-workflow/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
+    <lastmod>2026-02-06T22:16:28+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/fault-tolerance/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
+    <lastmod>2026-02-06T22:16:28+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/finite-state-machine/</loc>
+    <lastmod>2026-02-06T22:16:28+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/microservices/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/PostgreSQL/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/resilience/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/state-management/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/adaptability/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/AI-systems/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/Building-Machine-That-Behave-Like-Human/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/durable-execution/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/human-like-AI/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/task-management/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/workflow-automation/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/FSM/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/hierarchical-states/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/LCA/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/lowest-common-ancestor/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/Lowest-Common-Ancestor-LCA-in-Finite-State-Machines/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/process-modeling/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/software-design/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/state-machines/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/tree-algorithms/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/human-behavior/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/real-world-examples/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/system-reliability/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/Why-Finite-State-Machines-Are-Everywhere-From-Software-to-Human-Life/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/auditability/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/database-design/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/Finite-State-Machines-Backed-by-PostgreSQL-Intro/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-02-06T22:16:28+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-04-22T00:36:59+05:30</lastmod>
+    <lastmod>2026-02-06T22:16:28+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/PostgreSQL/</loc>
+    <lastmod>2026-02-06T22:16:28+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-02-06T22:16:28+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/resilience/</loc>
+    <lastmod>2026-02-06T22:16:28+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/state-management/</loc>
+    <lastmod>2026-02-06T22:16:28+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-02-06T22:16:28+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/workflow-orchestration/</loc>
+    <lastmod>2026-02-06T22:16:28+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/adaptability/</loc>
+    <lastmod>2026-02-06T14:43:46+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/AI-systems/</loc>
+    <lastmod>2026-02-06T14:43:46+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/Building-Machine-That-Behave-Like-Human/</loc>
+    <lastmod>2026-02-06T14:43:46+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/durable-execution/</loc>
+    <lastmod>2026-02-06T14:43:46+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/human-like-AI/</loc>
+    <lastmod>2026-02-06T14:43:46+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/task-management/</loc>
+    <lastmod>2026-02-06T14:43:46+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/workflow-automation/</loc>
+    <lastmod>2026-02-06T14:43:46+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/FSM/</loc>
+    <lastmod>2026-01-31T21:18:13+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hierarchical-states/</loc>
+    <lastmod>2026-01-31T21:18:13+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/LCA/</loc>
+    <lastmod>2026-01-31T21:18:13+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/lowest-common-ancestor/</loc>
+    <lastmod>2026-01-31T21:18:13+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/Lowest-Common-Ancestor-LCA-in-Finite-State-Machines/</loc>
+    <lastmod>2026-01-31T21:18:13+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/process-modeling/</loc>
+    <lastmod>2026-01-31T21:18:13+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/software-design/</loc>
+    <lastmod>2026-01-31T21:18:13+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/state-machines/</loc>
+    <lastmod>2026-01-31T21:18:13+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tree-algorithms/</loc>
+    <lastmod>2026-01-31T21:18:13+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/human-behavior/</loc>
+    <lastmod>2026-01-13T21:03:08+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/real-world-examples/</loc>
+    <lastmod>2026-01-13T21:03:08+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/system-reliability/</loc>
+    <lastmod>2026-01-13T21:03:08+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/Why-Finite-State-Machines-Are-Everywhere-From-Software-to-Human-Life/</loc>
+    <lastmod>2026-01-13T21:03:08+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/auditability/</loc>
+    <lastmod>2025-12-30T10:37:22+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/database-design/</loc>
+    <lastmod>2025-12-30T10:37:22+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/Finite-State-Machines-Backed-by-PostgreSQL-Intro/</loc>
+    <lastmod>2025-12-30T10:37:22+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>

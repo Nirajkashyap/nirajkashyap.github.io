@@ -5,7 +5,7 @@ pagination.pagerSize: 5
 theme: hugo-book
 
 
-publishDir: docs
+publishDir: ../docs
 
 enableRobotsTXT: true
 buildDrafts: false

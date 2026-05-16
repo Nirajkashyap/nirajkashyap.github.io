@@ -41,13 +41,15 @@ Themes make your site look nice. Choose one theme setup below.
 ### a. Add PaperMod theme
 ```sh
 git init
-git submodule add https://github.com/adityatelange/hugo-PaperMod themes/PaperMod
+git submodule add https://github.com/adityatelange/hugo-PaperMod hugo-blog-source/themes/PaperMod
+git submodule update --init --recursive
 ```
 
 ### b. Add HugoBook theme
 ```sh
 git init
-git submodule add https://github.com/alex-shpak/hugo-book themes/hugo-book
+git submodule add https://github.com/alex-shpak/hugo-book hugo-blog-source/themes/hugo-book
+git submodule update --init --recursive
 ```
 If you see any errors, ask for help or search online for "Git install on Mac".
 

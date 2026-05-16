@@ -2,7 +2,7 @@
 title: "Niraj Kashyap"
 layout: landing
 heroTitle: "Niraj Kashyap"
-heroSubtitle: "JavaScript developer building resilient systems and practical workflow automation"
+heroSubtitle: "FullStack JavaScript Developer — 10+ years building large-scale distributed systems, micro frontends, and workflow automation"
 githubUser: "Nirajkashyap"
 primaryCTA:
   label: "GitHub"
@@ -19,6 +19,12 @@ socialProfiles:
     url: "https://x.com/Niraj38re"
   - name: "Stack Overflow"
     url: "https://stackoverflow.com/users/2498621/niraj-kashyap"
+  - name: "StackBlitz"
+    url: "https://stackblitz.com/@Nirajkashyap"
+  - name: "GitLab"
+    url: "https://gitlab.com/niraj-38-re"
+  - name: "NPM"
+    url: "https://www.npmjs.com/~nirajkashyap"
   - name: "HackerRank"
     url: "https://www.hackerrank.com/profile/niraj38re"
   - name: "HackerEarth"
@@ -30,48 +36,288 @@ skills:
   - JavaScript
   - TypeScript
   - React
+  - Angular / AngularJS
   - Node.js
-  - FSM / Workflow Systems
+  - NestJS
+  - RxJS
+  - XState (FSM)
+  - Redux / NgRx
+  - Micro Frontend
+  - Microservices
+  - Nx Monorepo
   - Kubernetes
   - AWS
-  - PostgreSQL
   - Docker
+  - PostgreSQL
+  - MongoDB
+  - Redis
+certifications:
+  - name: "AWS Certified Solutions Architect - Associate"
+  - name: "Certified Kubernetes Administrator (CKA)"
 contact:
   email: "niraj38re@gmail.com"
+  location: "Pune, Maharashtra, India"
 ---
 
 <h1 align="center">Hi 👋, I'm Niraj Kashyap</h1>
-<h3 align="center">A passionate javascript developer from India</h3>
-
 <div>&nbsp;</div>
+I am a software engineer passionate about building large-scale distributed systems.
+Currenlty learning Finite State Machine.
 
-I am a software engineer passionate about coding, workflows, and building systems that recover gracefully from failures.
+### Social Links
 
-Currenlty learning Finite State Machine 
+{{< button href="https://github.com/Nirajkashyap" >}}GitHub{{< /button >}}
+{{< button href="https://www.npmjs.com/~nirajkashyap" >}}NPM{{< /button >}}
+{{< button href="https://gitlab.com/niraj-38-re" >}}GitLab{{< /button >}}
+
+{{< button href="https://www.linkedin.com/in/kashyapniraj/" >}}LinkedIn{{< /button >}}
+{{< button href="https://x.com/Niraj38re" >}}X / Twitter{{< /button >}}
+
+{{< button href="https://stackoverflow.com/users/2498621/niraj-kashyap" >}}Stack Overflow{{< /button >}}
+{{< button href="https://www.hackerrank.com/profile/niraj38re" >}}HackerRank{{< /button >}}
+{{< button href="https://www.hackerearth.com/@niraj.38.re" >}}HackerEarth{{< /button >}}
+{{< button href="https://stackblitz.com/@Nirajkashyap" >}}StackBlitz{{< /button >}}
+
+### Open Source
+
+{{% columns ratio="1:1" %}}
+
+- ### without AI *(pre-2023)*
+  *Hand-crafted without AI assistance*
+
+  ---
+
+  **[javascript-algorithms](https://github.com/mgechev/javascript-algorithms/pulls?q=is%3Apr+is%3Aclosed+author%3ANirajkashyap)**
+  Merged pull requests to the popular CS algorithms & data structures repo.
+
+  ---
+
+  **[scss-validator](https://www.npmjs.com/package/scss-validator)**
+  Library for mandating CSS naming and structure rules across large enterprise UI component libraries. Published on [NPM](https://www.npmjs.com/package/scss-validator).
+
+  ---
+
+    **[react-microfrontend](https://github.com/Nirajkashyap/react-microfrontend)** · **[react-microfrontend-submodule](https://github.com/Nirajkashyap/react-microfrontend-submodule)**
+  Micro Frontend architecture reference using React and Rollup as the submodule bundler.
+
+  ---
+
+  **[cra-template-redux-rxjs-typescript](https://www.npmjs.com/package/cra-template-redux-rxjs-typescript)**
+  Create React App template wiring Redux + RxJS in TypeScript with Micro Frontend architecture out of the box. Published on [NPM](https://www.npmjs.com/package/cra-template-redux-rxjs-typescript).
+
+  ---
+
+  **[generator-angular-2-lazy](https://github.com/Nirajkashyap/generator-angular-2-lazy)** - **[generator-angular-2-preandlazyload](https://github.com/Nirajkashyap/generator-angular-2-preandlazyload)** 
+  Yeoman generator for Angular with Bootstrap, TypeScript, and Webpack — supports both pre-load and lazy-load strategies.
+
+  ---
+
+  **[nest-microservice](https://github.com/Nirajkashyap/nest-microservice)**
+  NestJS microservice skeleton demonstrating inter-service communication patterns.
+
+  ---
+
+  **[Interactive-voice-response](https://github.com/Nirajkashyap/Interactive-voice-response)**
+  Client-side IVR system implementation in JavaScript.
+
+- ### with AI *(post-2023)*
+  *Built with AI pair-programming — ChatGPT, GitHub Copilot, Claude*
+
+  ---
+
+  **[fsm](https://github.com/Nirajkashyap/fsm)**
+  PostgreSQL-native Finite State Machine engine written in PLpgSQL. Persists state transitions directly in the database — durable execution without an external orchestrator.
+
+  ---
+
+  **[fsm_initial_work](https://github.com/Nirajkashyap/fsm_initial_work)**
+  TypeScript prototype exploring FSM state-transition modelling before migrating the core logic to PostgreSQL.
+
+  
+  ---
+
+  **[xstate](https://github.com/Nirajkashyap/xstate)** *(fork)*
+  Deep-dive fork of the XState actor-model library — studied internals to inform the PostgreSQL FSM design.
+
+  ---
+
+  **[pg-tables-to-jsonschema](https://github.com/Nirajkashyap/pg-tables-to-jsonschema)** *(fork)*
+  Fork used to auto-generate JSON Schema from PostgreSQL tables as part of the FSM tooling research.
+
+{{% /columns %}}
+
+{{% columns ratio="1:2" %}}
+
+- ### Certifications 
+
+  [AWS Certified Solutions Architect – Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/) \
+  [Certified Kubernetes Administrator](https://www.cncf.io/certification/cka/)
+
+  ---
+
+  **Domain**
+
+  Fintech \
+  Telecommunication \
+  EduTech \
+  Streaming 
+
+  ---
+  
+  **Technical Domain**
+  
+  Workflow Orchestration \
+  Event Driven \
+  Micro Service \
+  Micro FrontEnd \
+  Mono repo \
+  MBaaS ( Mobile Backend as Service ) \
+  API Management \
+  Web Technologies
+
+  ---
+
+  **Front-end**
+
+  **Language** \
+  JavaScript · TypeScript \
+  **Framework** \
+  React · Angular · AngularJS \
+  **State magement**  
+  Flux · Redux · NgRx · XState (FSM) \
+  **Scaffolding** \
+  Yeoman · CRA · Angular CLI \
+  **Bundler:** \
+  RequireJS · Webpack · Rollup \
+  **Testing:**  
+  Jest · Protractor \
+  **Other libs:** \
+  D3.js · IntroJS · JsPlumb · jQuery
+
+  ---
+
+  **Back-end**
+
+  NodeJS · Express · NestJS
+
+  ---
+
+  **Cloud**
+
+  AWS · GCP · Kubernetes \
+  Docker · Serverless \
+  Pivotal Cloud Foundry
+
+  *API Gateway:* APIGEE · AWS
+
+  ---
+
+  **DevOps**
+
+  Jenkins · Bamboo · GitHub \
+  GitLab · TravisCI · CircleCI
+
+  *Scaffolding:* JHipster · MEAN
+
+  ---
+
+  **Database**
+
+  *NoSQL:* MongoDB · Cassandra · Parse \
+  *SQL:* MySQL \
+  *In-Memory:* Redis
 
 
-| <a href="https://github.com/nirajkashyap/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=nirajkashyap&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" alt="Anurag's github stats" /></a> | <a href="https://github.com/nirajkashyap/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nirajkashyap&layout=compact&theme=buefy&hide_border=true" /></a> |
-| ------------- | ------------- |
 
 
-<a href="https://github.com/nirajkashyap/fsm">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nirajkashyap&repo=fsm&theme=buefy" />
-</a>
-<a href="https://github.com/mgechev/javascript-algorithms">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=mgechev&repo=javascript-algorithms&theme=buefy" />
-</a>
-<a href="https://github.com/Nirajkashyap/Interactive-voice-response">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Nirajkashyap&repo=Interactive-voice-response&theme=buefy" />
-</a>
+- ## Experience
 
-[Profile summry](https://profile-summary-for-github.com/user/nirajkashyap)
+  **Telstra / Senior Software Engineer**
+  *March 2022 – Present · Pune*
 
-<div>&nbsp;</div>
+  Domain Experience: Tele-Communication \
+  Applications: AskTelstra, Oneplace  \
+  Role: Agile – Senior Software Engineer
 
-Social Links: 
-<div class="social-icons"><a href="https://github.com/Nirajkashyap" target="_blank" rel="noopener noreferrer me" title="Github"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"></path></svg>
-</a><a href="https://www.linkedin.com/in/kashyapniraj/" target="_blank" rel="noopener noreferrer me" title="Linkedin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-</a><a href="https://x.com/Niraj38re" target="_blank" rel="noopener noreferrer me" title="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
-</a><a href="https://stackoverflow.com/users/2498621/niraj-kashyap" target="_blank" rel="noopener noreferrer me" title="Stackoverflow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.913 16.041v6.848h17.599v-6.848M7.16 18.696h8.925M7.65 13.937l8.675 1.8M9.214 9.124l8.058 3.758M12.086 4.65l6.849 5.66M15.774 1.111l5.313 7.162"></path></svg>
-</a><a href="https://www.hackerrank.com/profile/niraj38re" target="_blank" rel="noopener noreferrer me" title="Hackerrank"><svg viewBox="0 0 50 35" fill="currentColor" stroke-width="0" stroke="currentColor"><g><path d="M0 32.95H3.86 7.73V27.23 21.52h3.86 3.86v5.71 5.72h3.86 3.87V17.5 2.05H19.31 15.45V7.77v5.71H11.59 7.73V7.77 2.05H3.86.0V17.5 32.95z" id="i2pS2ila1d"></path><path d="M27.19 32.95H38.63 50.06V17.5 2.05H38.63 27.19V17.5 32.95z" id="dgDKP06E5"></path></g></svg>
-</a><a href="https://www.hackerearth.com/@niraj.38.re" target="_blank" rel="noopener noreferrer me" title="Hackerearth"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"></path></svg></a></div>
+  ---
+
+  **Nium / Principal Software Engineer**
+  *August 2021 – March 2022 · Mumbai*
+
+  Domain Experience: Fin-Tech > Reconciliation \
+  Sub domain: Reconciliation \
+  Applications: Reconciliation / back office automation \
+  Role: Agile – Principal Software Engineer / Back-end Developer
+
+  - Update product architecture and improve DevOps pipeline and code quality.
+
+  ---
+
+  **Wipro Digital / Sr Project Developer**
+  *April 2018 – August 2021 · Pune*
+
+  Domain Experience: Tele-Communication · Client: Telstra, Australia \
+  Applications: Assurance and Small Business \
+  Role: Agile – Extreme Programming Developer
+
+  - Increased code quality and productivity through Test-Driven Development.
+  - Increased code quality and productivity through Pair Programming (TDD / XP), Refactoring.
+  - Set up and improved CI/CD process and DevOps practices.
+
+  ---
+
+  **Cybage / Software Engineer**
+  *October 2015 – March 2018 · Pune*
+
+  Domain Experience: Media & Publishing / EdTech · Client: WorldBook, US \
+  Applications: Education Content Management Platform \
+  Role: Agile – Scrum Developer
+
+  - Develop / maintain CMS features.
+  - Develop interactive HTML5 web app using Angular / React.
+  - Write test scripts for performance and load testing of APIs.
+  - Write AWS deployment scripts and set up CI/CD processes.
+  - Develop Yeoman scaffolding generation tools to maintain industry best-practice standards.
+
+  ---
+
+  **INVESTIS / Software Engineer**
+  *October 2014 – September 2015 · Vadodara*
+
+  Domain Experience: Fin-Tech / Financial Data Service / Investor Relations \
+  Role: WebCast Engineer
+
+  - Build NodeJS application and integrate with Wowza streaming server.
+  - Cue point injection with real-time video stream and sync updates.
+  - Implement Docker containerisation for microservice architecture.
+  - Maintain AWS stack for different utility servers.
+
+  ---
+
+  **A2Zapps / Team Lead · Web Developer**
+  *June 2014 – October 2014 · Mumbai*
+
+  UI development with AngularJS, Bootstrap CSS, HTML5, and CSS3.
+
+  ---
+
+  **Linkall Web Tech Pvt. Ltd / Web Developer**
+  *January 2013 – May 2014 · Rajkot*
+
+  Full-stack web development.
+
+  ---
+
+  <!-- ## Education
+
+  **Gujarat Technical University / Bachelor of Engineering**
+  *June 2008 – June 2012 · Rajkot*
+
+  Discipline: Information Technology (IT) \
+  CGPA: 7.23 -->
+
+{{% /columns %}}
+
+---
+
+

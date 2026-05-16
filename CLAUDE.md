@@ -4,15 +4,27 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-Personal portfolio and blog site for Niraj Kashyap, built with [Hugo](https://gohugo.io/) using the `hugo-book` theme (git submodule). The compiled site publishes to `docs/`, served by GitHub Pages from the `master` branch.
+Personal portfolio and blog site for Niraj Kashyap, built with [Hugo](https://gohugo.io/) using the `hugo-book` theme (git submodule).
+
+**Repository layout:**
+- `hugo-blog-source/` — all Hugo source files (config, content, layouts, themes, static assets)
+- `docs/` — compiled site output; served by GitHub Pages from the `master` branch
+- `wiki-vault/` — Obsidian knowledge base (tracked in git alongside the site)
+- `wikis/` — source documents fed into wiki ingest
+
+All Hugo commands must be run from inside `hugo-blog-source/`. The `publishDir: ../docs` in `hugo.yaml` writes output to the repo root's `docs/` folder.
 
 ## Common Commands
 
+All commands run from `hugo-blog-source/`:
+
 ```sh
+cd hugo-blog-source
+
 # Start local dev server (includes draft posts)
 hugo server -D
 
-# Build for production (outputs to docs/)
+# Build for production (outputs to ../docs)
 hugo build
 
 # Create a new blog post
@@ -25,14 +37,14 @@ hugo new docs/section-name/page-title.md
 hugo server -D --config themeRef/hugobook.theme.hugo.yaml
 ```
 
-**Deployment:** No active CI/CD — the workflow in `.github/workflows/deployworkflow.yml` is entirely commented out. After `hugo build`, commit the updated `docs/` directory and push to `master`. GitHub Pages serves from `docs/`.
+**Deployment:** No active CI/CD — `.github/workflows/deployworkflow.yml` is entirely commented out. After `hugo build`, commit the updated `docs/` directory and push to `master`.
 
 ## Architecture
 
-### Config
+### Hugo Source (`hugo-blog-source/`)
 
-- `hugo.yaml` — active site config. `BookSection: posts` shows the posts section in the left sidebar. Key params: `gtmID` for GTM, `BookSearch`, `BookToC`.
-- `themeRef/` — reference configs not used in production builds: `hugobook.theme.hugo.yaml` switches the sidebar to docs; `papermod.theme.hugo.yaml` is an alternate theme config.
+- `hugo.yaml` — active site config. `publishDir: ../docs` outputs to repo root. `BookSection: posts` shows posts in the left sidebar. Key params: `gtmID` for GTM, `BookSearch`, `BookToC`.
+- `themeRef/` — reference configs not used in production: `hugobook.theme.hugo.yaml` switches sidebar to docs; `papermod.theme.hugo.yaml` is an alternate theme config.
 - `HugoHelp.md` — local Hugo reference notes.
 
 ### Content
@@ -61,7 +73,7 @@ hugo server -D --config themeRef/hugobook.theme.hugo.yaml
 
 ## Wiki (Obsidian Knowledge Base)
 
-The wiki lives inside this repo at `wiki-vault/` and is tracked in git alongside the site.
+The wiki lives at the repo root in `wiki-vault/` and is tracked in git alongside the site.
 
 - `wiki-vault/` — Obsidian vault. Categories: `concepts/`, `entities/`, `skills/`, `references/`, `synthesis/`, `journal/`, `projects/`. Staging area in `_raw/`, snapshots in `_archives/`.
 - `wikis/` — source documents directory (fed into wiki ingest).
@@ -82,7 +94,7 @@ Skills from `.agents/skills/` (mirrored in `.claude/skills/`) implement the wiki
 
 ## Front Matter Conventions
 
-**Posts** (`content/posts/*.md`):
+**Posts** (`hugo-blog-source/content/posts/*.md`):
 ```yaml
 title: 'Post Title'
 date: '2026-01-01T00:00:00+05:30'
@@ -94,7 +106,7 @@ description: "Short description."
 canonicalURL: "https://nirajkashyap.github.io/posts/post-slug"
 ```
 
-**Docs** (`content/docs/**/*.md`):
+**Docs** (`hugo-blog-source/content/docs/**/*.md`):
 ```yaml
 title: "Page Title"
 weight: 1   # controls sidebar ordering

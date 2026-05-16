@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Database Design on Niraj Kashyap</title>
-    <link>https://nirajkashyap.github.io/tags/database-design/</link>
+    <link>http://localhost:1313/tags/database-design/</link>
     <description>Recent content in Database Design on Niraj Kashyap</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 22 Apr 2026 00:36:59 +0530</lastBuildDate>
-    <atom:link href="https://nirajkashyap.github.io/tags/database-design/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/database-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Finite State Machines Backed by PostgreSQL Intro</title>
-      <link>https://nirajkashyap.github.io/posts/Finite-State-Machines-Backed-by-PostgreSQL-Intro/</link>
+      <link>http://localhost:1313/posts/Finite-State-Machines-Backed-by-PostgreSQL-Intro/</link>
       <pubDate>Tue, 30 Dec 2025 10:37:22 +0530</pubDate>
-      <guid>https://nirajkashyap.github.io/posts/Finite-State-Machines-Backed-by-PostgreSQL-Intro/</guid>
+      <guid>http://localhost:1313/posts/Finite-State-Machines-Backed-by-PostgreSQL-Intro/</guid>
       <description>&lt;p&gt;If you’re new to the concept of &lt;strong&gt;Finite State Machines (FSMs)&lt;/strong&gt;, check out my previous blog post: &lt;a href=&#34;https://nirajkashyap.github.io/posts/why-finite-state-machines-are-everywhere-from-software-to-human-life/&#34;&gt;Why Finite State Machines Are Everywhere: From Software to Human Life&lt;/a&gt;. That post explores how FSMs are fundamental to both software systems and real-world processes.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;finite-state-machine-in-various-languages&#34;&gt;Finite State Machine: In Various Languages&lt;a class=&#34;anchor&#34; href=&#34;#finite-state-machine-in-various-languages&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;FSMs as a concept have been implemented in many programming languages, each with its own data structures and libraries. For example:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;TypeScript/JavaScript&lt;/strong&gt;: &lt;a href=&#34;https://xstate.js.org/&#34;&gt;xstate&lt;/a&gt; is a popular library for modeling FSMs and statecharts.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Python&lt;/strong&gt;: Libraries like &lt;a href=&#34;https://github.com/pytransitions/transitions&#34;&gt;transitions&lt;/a&gt; provide easy-to-use FSM implementations.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Java&lt;/strong&gt;: Frameworks such as &lt;a href=&#34;https://projects.spring.io/spring-statemachine/&#34;&gt;Spring State Machine&lt;/a&gt; offer robust FSM support.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;C#&lt;/strong&gt;: Libraries like &lt;a href=&#34;https://github.com/dotnet-state-machine/stateless&#34;&gt;Stateless&lt;/a&gt; are widely used for FSMs.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Go&lt;/strong&gt;: Libraries like &lt;a href=&#34;https://github.com/looplab/fsm&#34;&gt;looplab/fsm&lt;/a&gt; provide simple and effective FSM implementations for Go.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;These libraries use different data structures—objects, classes, state tables, or even domain-specific languages—to represent states and transitions, but the core principles remain the same.&lt;/p&gt;</description>
     </item>
   </channel>

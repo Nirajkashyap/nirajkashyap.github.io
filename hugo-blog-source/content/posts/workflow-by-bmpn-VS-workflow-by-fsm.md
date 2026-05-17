@@ -7,7 +7,7 @@ tags: ["workflow-orchestration", "finite-state-machine", "business-process"]
 author: ["Niraj Kashyap"]
 # author: ["Me", "You"] # multiple authors
 bookToC: true
-draft: true
+draft: false
 bookComments: true
 description: "How flowcharts, statecharts, and BPMN differ as workflow design and execution models."
 canonicalURL: "https://nirajkashyap.github.io/posts/"

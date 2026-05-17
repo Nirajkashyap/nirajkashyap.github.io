@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Business Process on Niraj Kashyap</title>
+    <title>Business-Process on Niraj Kashyap</title>
     <link>https://nirajkashyap.github.io/tags/business-process/</link>
-    <description>Recent content in Business Process on Niraj Kashyap</description>
+    <description>Recent content in Business-Process on Niraj Kashyap</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 16 May 2026 22:14:09 +0530</lastBuildDate>
     <atom:link href="https://nirajkashyap.github.io/tags/business-process/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flowchart vs Statechart vs BPMN: Which Runs Workflows?</title>
+      <link>https://nirajkashyap.github.io/posts/workflow-by-bmpn-VS-workflow-by-fsm/</link>
+      <pubDate>Fri, 27 Mar 2026 14:03:00 +0530</pubDate>
+      <guid>https://nirajkashyap.github.io/posts/workflow-by-bmpn-VS-workflow-by-fsm/</guid>
+      <description>&lt;p&gt;Workflow conversations often mix up three different layers: how we sketch a process, which tools validate the sketch, and what actually runs in production. This post separates those layers by comparing flowcharts, statecharts (FSMs), and BPMN, so you can choose the right tool for the job.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-a-diagram&#34;&gt;What is a diagram&lt;a class=&#34;anchor&#34; href=&#34;#what-is-a-diagram&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;A diagram is a visual model of behavior, structure, or flow. It helps people share understanding faster than plain text by showing relationships, order, and boundaries in one view.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Durable Execution: FSM based Orchestration Platform</title>
       <link>https://nirajkashyap.github.io/posts/Durable-Execution-FSM-based-Orchestration-Platform/</link>

@@ -72,7 +72,7 @@ params:
   author: Me
   images: ["favicon_io/apple-touch-icon.png"]
 
-  BookTheme: auto
+  BookTheme: light
   BookToC: true
   BookSection: posts # docs if you want to use it as documentation site
   BookDateFormat: "January 2, 2006"

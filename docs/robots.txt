@@ -1,5 +1,6 @@
 Niraj Kashyap
 
+- Flowchart vs Statechart vs BPMN: Which Runs Workflows?: https://nirajkashyap.github.io/posts/workflow-by-bmpn-VS-workflow-by-fsm/
 - Durable Execution: FSM based Orchestration Platform: https://nirajkashyap.github.io/posts/Durable-Execution-FSM-based-Orchestration-Platform/
 - Building Machine That Behave Like Human: https://nirajkashyap.github.io/posts/Building-Machine-That-Behave-Like-Human/
 - Lowest Common Ancestor LCA in Finite State Machines: https://nirajkashyap.github.io/posts/Lowest-Common-Ancestor-LCA-in-Finite-State-Machines/

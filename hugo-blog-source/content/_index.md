@@ -78,7 +78,8 @@ Currenlty learning Finite State Machine.
 {{< button href="https://www.hackerearth.com/@niraj.38.re" >}}HackerEarth{{< /button >}}
 {{< button href="https://stackblitz.com/@Nirajkashyap" >}}StackBlitz{{< /button >}}
 
-### Open Source
+
+<h1 align="center">Open Source </h1>
 
 {{% columns ratio="1:1" %}}
 
@@ -145,6 +146,9 @@ Currenlty learning Finite State Machine.
   Fork used to auto-generate JSON Schema from PostgreSQL tables as part of the FSM tooling research.
 
 {{% /columns %}}
+
+
+<h1 align="center"> Curriculum Vitae </h1> 
 
 {{% columns ratio="1:2" %}}
 
